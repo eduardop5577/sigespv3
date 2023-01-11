@@ -1,0 +1,1 @@
+La factura 00013 no se pudo agregar ya que el proveedor/beneficiario asociado no posee rif. 

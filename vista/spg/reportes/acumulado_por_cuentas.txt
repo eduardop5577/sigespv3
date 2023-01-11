@@ -1,0 +1,584 @@
+401000000/GASTOS DE PERSONAL/6.817.547,00/0,00/0,00/6.869.547,00/0,00/0,00/249.357,46/249.357,46/0,00/0,00/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/0,00/0,00/448.061,00/0,00/0,00/160.139,87/160.139,87/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/0,00/0,00/47.014.797,00/0,00/0,00/43.956.398,41/43.956.398,41/0,00/0,00/148.286,95
+404000000/ACTIVOS REALES/558.199,00/0,00/0,00/381.269.898,28/0,00/0,00/380.043.294,06/380.043.294,06/0,00/0,00/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/0,00/0,00/2.231.488,00/0,00/0,00/1.794.210,33/1.794.210,33/0,00/0,00/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/0,00/0,00/5.165.052,00/0,00/0,00/4.235.929,00/4.235.929,00/0,00/0,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404000000/ACTIVOS REALES/558.199,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.805,78/3.058.398,59/43.637.592,63/43.637.592,63/1.927.823,45/1.779.536,50/148.286,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.805,78/3.058.398,59/43.637.592,63/43.637.592,63/1.927.823,45/1.779.536,50/148.286,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.805,78/3.058.398,59/43.637.592,63/43.637.592,63/1.927.823,45/1.779.536,50/148.286,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.805,78/3.058.398,59/43.637.592,63/43.637.592,63/1.927.823,45/1.779.536,50/148.286,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.805,78/3.058.398,59/43.637.592,63/43.637.592,63/1.927.823,45/1.779.536,50/148.286,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/6.817.547,00/114.500,00/62.500,00/6.869.547,00/1.593,75/6.620.189,54/247.763,71/247.763,71/6.620.189,54/5.952.979,27/667.210,27
+402000000/MATERIALES, SUMINISTROS Y MERCANCÃAS/413.061,00/130.836,00/95.836,00/448.061,00/1.208,78/287.921,13/158.931,09/158.931,09/285.737,13/285.737,13/0,00
+403000000/SERVICIOS NO PERSONALES/2.899.312,00/44.473.836,00/358.351,00/47.014.797,00/318.820,98/3.058.448,09/43.637.527,93/43.637.527,93/1.927.835,45/1.779.536,50/148.298,95
+404000000/ACTIVOS REALES/558.199,00/380.729.699,28/18.000,00/381.269.898,28/7.433,93/1.226.604,22/380.035.860,13/380.035.860,13/786.870,30/780.355,30/6.515,00
+407000000/TRANSFERENCIAS Y DONACIONES/30.000,00/0,00/0,00/30.000,00/0,00/0,00/30.000,00/30.000,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/2.231.488,00/169.930,00/169.930,00/2.231.488,00/0,00/437.277,67/1.794.210,33/1.794.210,33/437.277,67/437.277,67/0,00
+411000000/DISMINUCION DE PASIVOS/1.000.000,00/4.502.054,00/337.002,00/5.165.052,00/0,00/929.123,00/4.235.929,00/4.235.929,00/929.123,00/929.123,00/0,00
+401000000/GASTOS DE PERSONAL/2.719.825.849,00/0,00/0,00/2.719.825.849,00/0,00/765.566.449,56/1.954.259.399,44/1.954.259.399,44/99.671.207,83/99.511.912,18/159.295,65
+403000000/SERVICIOS NO PERSONALES/31.405.889,00/0,00/0,00/31.405.889,00/0,00/7.392.000,00/24.013.889,00/24.013.889,00/0,00/0,00/0,00
+401000000/GASTOS DE PERSONAL/2.719.825.849,00/0,00/0,00/2.719.825.849,00/0,00/765.566.449,56/1.954.259.399,44/1.954.259.399,44/99.671.207,83/99.511.912,18/159.295,65
+403000000/SERVICIOS NO PERSONALES/31.405.889,00/0,00/0,00/31.405.889,00/0,00/7.392.000,00/24.013.889,00/24.013.889,00/0,00/0,00/0,00
+401010100/Sueldos bÃ¡sicos personal fijo a tiempo completo/838,53/132,58/0,00/3.788,60/0,00/1.969,11/341,03/341,03/1.969,11/1.969,11/0,00
+401010200/Sueldos bÃ¡sicos personal fijo a tiempo parcial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401010300/Suplencias a empleados/28,77/0,00/0,00/164,22/0,00/0,00/164,22/164,22/0,00/0,00/0,00
+401010800/Sueldo al personal en trÃ¡mite de nombramiento/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401010900/Remuneraciones al personal en perÃ­odo de disponibilidad/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401011000/Salarios a obreros en puestos permanentes a tiempo completo/1.255,45/0,00/0,00/4.816,49/0,00/2.156,61/434,04/434,04/2.156,61/2.156,61/0,00
+401011200/Salarios a obreros en puestos no permanentes/383,01/0,00/0,00/1.528,31/0,00/326,56/617,45/617,45/326,56/326,56/0,00
+401011300/Suplencias a obreros/10,62/0,00/0,00/376,60/0,00/4,59/354,93/354,93/4,59/4,59/0,00
+401011800/Remuneraciones al personal contratado/1.165,80/0,00/0,00/7.171,44/0,00/1.869,68/3.199,85/3.199,85/1.905,39/2.185,39/10,59
+401011900/Retribuciones por becas-salarios, bolsas de trabajo, pasantÃ­as y similares/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401012900/Dietas/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401013600/Sueldos  al  personal de Alto nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401013800/Dietas  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401020000/Compensaciones previstas en las escalas de sueldos y salarios/794,88/0,00/0,00/1.372,61/0,00/634,60/507,74/507,74/634,60/634,60/0,00
+401020100/Compensaciones previstas en las escalas de sueldos al personal empleado fijo a tiempo completo/739,89/0,00/0,00/1.313,17/0,00/614,20/507,71/507,71/614,20/614,20/0,00
+401020200/Compensaciones previstas en las escalas de sueldos al personal empleado fijo a tiempo parcial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401020300/Compensaciones previstas en las escalas de salarios al personal obrero fijo a tiempo completo/54,99/0,00/0,00/59,44/0,00/20,40/0,03/0,03/20,40/20,40/0,00
+401030000/Primas a empleados, obreros, personal militar y parlamentarios/1.318,58/605,67/0,00/5.776,73/0,00/1.989,50/2.523,43/2.523,43/1.989,50/1.989,50/18,92
+401030100/Primas por mÃ©rito a empleados/55,87/0,00/0,00/311,41/0,00/57,28/229,57/229,57/57,28/57,28/0,00
+401030400/Primas por hijos a empleados/0,51/0,00/0,00/280,73/0,00/21,86/178,06/178,06/21,86/21,86/0,00
+401030800/Primas de profesionalizaciÃ³n a empleados/103,59/0,00/0,00/574,23/0,00/221,54/153,97/153,97/221,54/221,54/0,00
+401030801/Primas de profesionalizacion empleados/103,59/0,00/0,00/574,23/0,00/221,54/153,97/153,97/221,54/221,54/0,00
+401030802/Primas de profesionalizacion medicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030900/Primas por antigÃ¼edad a empleados/382,99/0,00/0,00/1.190,18/0,00/358,24/501,66/501,66/358,24/358,24/0,00
+401030901/Primas por antigÃ¼edad a los medicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030902/Primas por antigÃ¼edad a enfermeras/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030903/Primas por antigÃ¼edad a empleados  Administrativo/382,99/0,00/0,00/1.166,11/0,00/358,24/477,59/477,59/358,24/358,24/0,00
+401030904/Prima de antiguedad de los medicos art 10/0,00/0,00/0,00/24,07/0,00/0,00/24,07/24,07/0,00/0,00/0,00
+401031000/Primas por jerarquÃ­a o responsabilidad en el cargo/132,96/605,67/0,00/1.201,82/0,00/442,25/665,99/665,99/442,25/442,25/6,73
+401031600/Primas por mÃ©rito a obreros (evaluacion )/60,31/0,00/0,00/283,59/0,00/240,62/0,03/0,03/240,62/240,62/0,00
+401031900/Primas por hijos de obreros/0,59/0,00/0,00/0,94/0,00/0,10/0,44/0,44/0,10/0,10/0,00
+401032100/Primas por antigÃ¼edad a obreros/304,99/0,00/0,00/550,55/0,00/264,20/9,36/9,36/264,20/264,20/0,00
+401032200/Primas de profesionales a obreros/13,55/0,00/0,00/52,22/0,00/21,11/8,94/8,94/21,11/21,11/0,00
+401033900/Primas por hijos al personal contratado/0,57/0,00/0,00/49,56/0,00/0,08/49,10/49,10/0,08/0,08/0,00
+401034000/Primas de profesionalizacion al personal contratado/14,24/0,00/0,00/166,32/0,00/8,67/138,39/138,39/8,67/8,67/1,06
+401034100/Primas por antigÃ¼edad a empleados  Contratado/141,21/0,00/0,00/348,90/0,00/110,52/166,87/166,87/110,52/110,52/0,23
+401034700/Pimas al Personal de Alto Nivel y de Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039600/Otras primas al personal Contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039700/Otras primas a empleados/106,84/0,00/0,00/765,89/0,00/243,03/420,86/420,86/243,03/243,03/10,90
+401039701/Primas de movilizacion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039702/Primas de frotnteras   ( enfermeras y medicos )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039703/Primas de dirigentes sindical/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039704/Prima de meritos empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039705/Primas de responsabilidad en el cargo empleados  ( 99)/106,84/0,00/0,00/765,89/0,00/243,03/420,86/420,86/243,03/243,03/10,90
+401039800/Otras primas a obreros/0,36/0,00/0,00/0,39/0,00/0,00/0,19/0,19/0,00/0,00/0,00
+401039801/Primas por responsabilida en el cargo a obreros/0,36/0,00/0,00/0,39/0,00/0,00/0,19/0,19/0,00/0,00/0,00
+401039802/Prima de profesionales obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039803/primas incentivo al estudio obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040000/Complementos de sueldos y salarios/6.441,77/11.173,64/7.920,53/42.240,37/0,00/18.699,21/4.695,14/4.695,14/18.699,21/18.699,21/33,77
+401040100/Complemento a empleados por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040200/Complemento a empleados por trabajo nocturno/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040500/Complemento a empleados por gastos de representaciÃ³n/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040800/Bono compensatorio de alimentaciÃ³n a empleados/589,44/0,00/0,00/6.008,94/0,00/2.283,84/998,40/998,40/2.283,84/2.283,84/0,00
+401041000/Complemento  a empleados por dias feriados/0,19/0,00/0,00/203,72/0,00/0,00/203,72/203,72/0,00/0,00/0,00
+401041400/Complemento a obreros por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401041500/Complemento a obreros por trabajo o jornada nocturna/273,05/0,00/0,00/1.078,35/0,00/422,14/202,20/202,20/422,14/422,14/0,00
+401041800/Bono compensatorio de alimentaciÃ³n a obreros/1.674,88/5.738,98/0,00/10.794,04/0,00/6.938,15/-0,01/-0,01/6.938,15/6.938,15/0,00
+401041900/Bono compensatorio de transporte a obreros/8,75/0,00/0,00/12,68/0,00/1,18/5,94/5,94/1,18/1,18/0,00
+401042000/Complemento  a  obreros por dias feriados/4,87/0,00/0,00/131,43/0,00/5,92/125,13/125,13/5,92/5,92/0,00
+401042400/Complemento al personal contratado por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401042600/Bono compensatorio de alimentaciÃ³n al personal contratado/1.980,20/4.173,43/0,00/12.900,80/0,00/6.074,99/-0,02/-0,02/6.074,99/6.074,99/0,00
+401042700/Bono compensatorio de transporte al personal contratado/6,02/0,00/0,00/110,65/0,00/1,03/102,23/102,23/1,03/1,03/1,22
+401042800/Complementos al personal contratados por dias feriados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401044800/Complementos por Gastos de Representacion a Empleados/0,11/0,00/0,00/0,15/0,00/0,02/0,05/0,05/0,02/0,02/0,00
+401045100/Bono compensatorio de alimentaciÃ³n al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401045200/Bono compensatorio de transporte  al personal de Alto Nivel y Direccion/0,03/0,00/0,00/0,04/0,00/0,00/0,04/0,04/0,00/0,00/0,00
+401049600/Otros complementos a empleados/1.305,51/671,97/6.448,57/7.939,23/0,00/2.856,26/2.328,69/2.328,69/2.856,26/2.856,26/32,55
+401049601/Otros complementos a empleados domingo y dias feriados/0,00/0,70/0,00/0,70/0,00/0,00/0,70/0,70/0,00/0,00/0,00
+401049602/Otros complementos a empleados  horas adicionales personal medico/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049603/Otros complementos a empleados bono medicinas/24,03/0,00/0,00/45,36/0,00/0,00/45,36/45,36/0,00/0,00/0,00
+401049604/Otros complementos a empleados  otras asignaciones/5,57/0,00/0,00/2.128,42/0,00/33,28/782,28/782,28/33,28/33,28/0,00
+401049605/Otros complementos a empleados  bono unico/0,00/0,00/5.551,01/1.727,84/0,00/1.608,71/25,64/25,64/1.608,71/1.608,71/0,00
+401049606/Otros complementos a empleados  bono produccion/0,00/99,28/0,00/99,28/0,00/0,00/99,28/99,28/0,00/0,00/0,00
+401049607/Otros complementos a empleados  horas adicionales gremios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049609/Otros complementos a empleados  bono por aÃ±os de servicios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049610/Otros complementos a empleados  ayuda por hijo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049611/Otros complementos a empleados  hijos excepcionales/0,12/13,53/0,00/19,78/0,00/0,04/19,70/19,70/0,04/0,04/0,00
+401049612/Otros complementos a empleados  bono profesionalizacion contratado/115,61/31,25/0,00/434,82/0,00/199,13/117,23/117,23/199,13/199,13/0,00
+401049613/Otros complementos a empleados  (   bono de gestion institucional  )/691,69/335,70/0,00/994,85/0,00/0,00/335,70/335,70/0,00/0,00/22,97
+401049615/Otros complementos a empleados  dif bono per, enfermera y ajuste otras asignaciones/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049616/Otros complementos a empleados  responsabilidad en el cargo/26,65/0,00/44,13/13,42/0,00/7,98/2,99/2,99/7,98/7,98/0,00
+401049617/Otros complementos a empleados  bono hallaca/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049618/Otros complementos a empleados  ( prima de transporte  )/4,33/0,00/348,45/192,31/0,00/30,83/28,45/28,45/30,83/30,83/0,00
+401049619/Otros complementos a empleados (  prima del hogar )/27,99/0,00/504,98/266,57/0,00/48,75/41,70/41,70/48,75/48,75/1,20
+401049620/Otros complementos a empleados  ( dias adicionales   )/84,12/0,00/0,00/226,66/0,00/90,85/99,24/99,24/90,85/90,85/0,00
+401049621/Otros complementos a empleados ( bono de nivelacion )/265,92/191,51/0,00/1.544,27/0,00/686,36/666,04/666,04/686,36/686,36/8,38
+401049622/Evaluacion Empleados Contratados/59,48/0,00/0,00/244,95/0,00/150,33/64,38/64,38/150,33/150,33/0,00
+401049623/Otros complementos a empleados Ajuste Salarial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049624/Otros complementos a empleados  (  Prima de Asistencia Medicos )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049625/Otros complementos a empleados  (  Prima de  Medicos  Especialistas )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049626/Otros complementos a empleados  (  Prima de  Medicos  Dedicacion )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049700/Otros complementos a obreros/598,72/589,26/1.471,96/3.060,34/0,00/115,68/728,77/728,77/115,68/115,68/0,00
+401049701/Otros complementos a obreros dias adicionales/54,87/0,00/0,00/154,37/0,00/54,30/63,61/63,61/54,30/54,30/0,00
+401049702/Otros complementos obreros dias feriados/17,48/0,00/198,04/21,51/0,00/18,23/0,00/0,00/18,23/18,23/0,00
+401049703/Otros complementos a obreros  bono unico/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049704/Otros complementos a obreros   otras asignaciones/5,31/0,00/1.273,92/2.001,97/0,00/0,04/0,01/0,01/0,04/0,04/0,00
+401049705/Otros complementos a obreros bono medicina/21,22/0,00/0,00/41,72/0,00/0,00/41,72/41,72/0,00/0,00/0,00
+401049707/Compensacionpoe eficiencias y productividad obrero  (evaluacion )/0,00/0,00/0,00/51,35/0,00/0,00/51,35/51,35/0,00/0,00/0,00
+401049709/Otros complementos a obreros   ( movilizacion sindical    )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049710/Otros complementos a obreros  (   bono de gestion institucional  )/467,12/545,31/0,00/697,16/0,00/0,00/545,31/545,31/0,00/0,00/0,00
+401049711/Otros complementos a obreros  bono hallaca/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049712/Otros complementos a obreros  ( hijos excepcionalesl  )/0,04/0,00/0,00/0,07/0,00/0,00/0,07/0,07/0,00/0,00/0,00
+401049713/Otros complementos obreros  (  prima del hogar )/23,32/0,00/0,00/35,99/0,00/3,14/16,75/16,75/3,14/3,14/0,00
+401049714/Evaluacion Obreros Contratados/9,36/43,95/0,00/56,20/0,00/39,97/9,95/9,95/39,97/39,97/0,00
+401050000/Aguinaldos, utilidades o bonificaciÃ³n legal, y bono vacacional a empleados, obreros, contratados, personal militar y parlamentarios/1.073,49/0,00/916,22/3.325,34/0,00/1.367,24/615,21/615,21/1.367,24/1.367,24/0,00
+401050100/Aguinaldos a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050300/Bono vacacional a empleados/459,51/0,00/720,06/1.213,78/0,00/784,43/92,36/92,36/784,43/784,43/0,00
+401050400/Aguinaldos a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050600/Bono vacacional a obreros/490,31/0,00/0,00/924,04/0,00/332,81/75,05/75,05/332,81/332,81/0,00
+401050700/Aguinaldos al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050800/Bono vacacional al personal contratado/123,39/0,00/196,16/1.187,24/0,00/250,00/447,52/447,52/250,00/250,00/0,00
+401051600/Aguinaldos al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401051800/Bono vacacional  al personal de Alto Nivel y Direccion/0,28/0,00/0,00/0,28/0,00/0,00/0,28/0,28/0,00/0,00/0,00
+401060000/Aportes patronales por empleados, obreros, personal militar y parlamentarios/956,02/223,13/0,00/2.772,68/0,00/1.721,10/495,28/495,28/1.721,10/1.721,10/3,50
+401060100/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por empleados/205,50/90,17/0,00/436,60/0,00/303,66/37,64/37,64/303,66/303,66/0,00
+401060300/Aporte patronal al Fondo de Jubilaciones por empleados/58,39/0,00/0,00/192,13/0,00/130,64/26,17/26,17/130,64/130,64/0,00
+401060400/Aporte Patronal al Fondo de Seguro de Paro Forzoso por empleados/45,68/20,46/0,00/114,55/0,00/80,04/8,11/8,11/80,04/80,04/0,00
+401060500/Aporte patronal al Fondo de Ahorro Habitacional por empleados/39,23/22,04/0,00/121,43/0,00/86,84/11,06/11,06/86,84/86,84/0,00
+401061000/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por obreros/223,56/57,75/0,00/391,61/0,00/300,97/2,12/2,12/300,97/300,97/0,00
+401061100/Aporte patronal al Fondo de Jubilaciones por obreros/53,14/3,11/0,00/143,27/0,00/110,12/7,26/7,26/110,12/110,12/0,00
+401061200/Aporte patronal al Fondo de Seguro de Paro Forzoso por obreros/50,10/13,50/0,00/88,06/0,00/67,68/0,47/0,47/67,68/67,68/0,00
+401061300/Aporte patronal al Fondo de Ahorro Habitacional por obreros/43,81/15,60/0,00/95,52/0,00/73,43/4,83/4,83/73,43/73,43/0,00
+401062500/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por Persona Contratado/164,93/0,00/0,00/708,23/0,00/366,37/195,43/195,43/366,37/366,37/2,47
+401062600/Aporte patronal al Fondo de Ahorro Habitacional por Personal contratdo/31,90/0,00/0,00/219,61/0,00/103,89/82,52/82,52/103,89/103,89/0,48
+401062700/Aporte patronal al Fondo de Seguro de Paro Forzoso por personal  contratado/36,65/0,00/0,00/245,99/0,00/94,12/116,13/116,13/94,12/94,12/0,55
+401063900/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) al personal de Alto Nivel y Direccion/1,41/0,00/0,00/5,51/0,00/1,85/-0,01/-0,01/1,85/1,85/0,00
+401064100/Aporte patronal al Fondo de Jubilaciones al  personal de Alto Nivel y Direccion/0,67/0,00/0,00/4,51/0,00/0,64/1,40/1,40/0,64/0,64/0,00
+401064200/Aporte patronal al Fondo de Ahorro Habitacional al personal de Alto Nivel y Direccion/0,44/0,50/0,00/3,51/0,00/0,85/-0,00/-0,00/0,85/0,85/0,00
+401064300/Aporte patronal al Fondo de Seguro de Paro Forzoso por personal de alto nivel y direccion/0,00/0,00/0,00/2,15/0,00/0,00/2,15/2,15/0,00/0,00/0,00
+401069400/Otors Aportes Patronales por empleados y Obreros por Personal de Alto Nivel y de Direccion/0,61/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070000/Asistencia socio-econÃ³mica a empleados, obreros, contratados, personal militar y parlamentarios/2.472,09/231,43/0,00/70.727,83/0,00/18.425,79/17.981,58/17.981,58/18.425,79/18.425,79/0,00
+401070100/CapacitaciÃ³n y adiestramiento a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070200/Becas a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070300/Ayudas por matrimonio a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070400/Ayudas por nacimiento de hijos a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070500/Ayudas por defunciÃ³n a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070600/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070700/Aporte patronal a cajas de ahorro por empleados/83,42/53,08/0,00/274,12/0,00/191,04/38,44/38,44/191,04/191,04/0,00
+401070800/Aporte patronal al seguro de vida, accidentes personales, hospitalizacion, cirugia, maternidad (HCM) y gastos funerarios por empleados/289,70/0,00/0,00/11.040,31/0,00/2.225,01/2.225,02/2.225,02/2.225,01/2.225,01/0,00
+401070801/Aporte patronal po  gastos funerarios por empleados/15,42/0,00/0,00/721,46/0,00/192,56/192,55/192,55/192,56/192,56/0,00
+401070802/Aporte patronal al seguro de hospitalizacion, cirugia, maternidad (HCM) empleados/268,94/0,00/0,00/10.043,62/0,00/1.958,85/1.958,85/1.958,85/1.958,85/1.958,85/0,00
+401070803/Aporte por accidentes/3,77/0,00/0,00/76,53/0,00/19,84/19,85/19,85/19,84/19,84/0,00
+401070804/Seguro de vida/1,57/0,00/0,00/198,70/0,00/53,76/53,77/53,77/53,76/53,76/0,00
+401070900/Ayudas a empleados para adquisicion de uniformes y utiles escolares de sus hijos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071000/DotaciÃ³n de uniformes a empleados/14,51/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071001/DotaciÃ³n de uniformes a empleados/14,51/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071002/DotaciÃ³n de uniformes a empleados  a gremios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071100/Aporte patronal para gastos de guarderias y preescolar para hijos de empleados/112,08/0,00/0,00/38,08/0,00/0,00/30,54/30,54/0,00/0,00/0,00
+401071200/Aportes para la adquisicion de juguetes para los hijos del personal empleado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071700/Capacitacion y adiestramiento a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071800/Becas a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071900/Ayudas por matrimonio de obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072000/Ayudas por nacimiento de hijos de obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072100/Ayudas por defuncion a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072200/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072300/Aporte patronal a cajas de ahorro por obreros/166,80/0,00/0,00/408,34/0,00/310,27/21,65/21,65/310,27/310,27/0,00
+401072400/Aporte patronal al seguro de vida, accidentes personales, hospitalizacoin, cirugia, maternidad (HCM) y gastos funerarios por obreros/974,14/0,00/0,00/12.382,61/0,00/3.111,40/3.111,40/3.111,40/3.111,40/3.111,40/0,00
+401072401/Gastos funerarios obreros/51,86/0,00/0,00/1.039,18/0,00/269,27/269,27/269,27/269,27/269,27/0,00
+401072402/Aporte patronal al seguro , hospitalizacoin, cirugia, maternidad (HCM) por obreros/904,31/0,00/0,00/10.948,06/0,00/2.739,20/2.739,21/2.739,21/2.739,20/2.739,20/0,00
+401072403/Aporte de accidentes/12,69/0,00/0,00/114,43/0,00/27,75/27,74/27,74/27,75/27,75/0,00
+401072404/seguro de vida/5,28/0,00/0,00/280,94/0,00/75,18/75,18/75,18/75,18/75,18/0,00
+401072500/Ayudas a obreros para adquisicion de uniformes y utiles escolares de sus hijos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072600/Dotacion de uniformes a obreros/22,56/0,00/0,00/22,56/0,00/0,00/22,56/22,56/0,00/0,00/0,00
+401072700/Aporte patronal para gastos de guarderias y preescolar para hijos de obreros/25,34/0,00/0,00/8,60/0,00/0,00/2,07/2,07/0,00/0,00/0,00
+401072800/Aportes para la adquisicion de juguetes para los hijos del personal obrero/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076300/CapacitaciÃ³n y adiestramiento  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076400/Ayudas por matrimonio al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076500/Ayudas por nacimiento de hijos al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076700/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076800/Aporte patronal a cajas de ahorro por al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076900/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacional personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076901/Aporte patronal por  gastos funerarios al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076902/Seguro H.C.M.  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076903/Aporte por accidentes al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076904/Seguro de vida al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077400/Capacitacion y adiestramiento al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077500/Becas al personal  contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077600/Ayudas por matrimonio al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077700/Ayudas por nacimiento  al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077900/Ayudas para medicinas, gastos medicos, odontologos personal contratdo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078000/Aporte patronal de caja de ahorro por personal contratado/72,48/178,35/0,00/350,37/0,00/178,65/107,75/107,75/178,65/178,65/0,00
+401078100/Aporte patronal a los servicios de salud, accidentes y gastos funerario al   personal contratado/664,25/0,00/0,00/46.165,46/0,00/12.409,42/12.409,43/12.409,43/12.409,42/12.409,42/0,00
+401078101/Aporte patronal  pos gastos  funerario al   personal contratado/35,36/0,00/0,00/3.973,15/0,00/1.073,94/1.073,95/1.073,95/1.073,94/1.073,94/0,00
+401078102/Aporte patronal al seguro HCM al   personal contratado/616,64/0,00/0,00/40.674,85/0,00/10.924,97/10.924,96/10.924,96/10.924,97/10.924,97/0,00
+401078103/Aporte patronal  por accidentel   personal contratado/8,65/0,00/0,00/414,41/0,00/110,66/110,67/110,67/110,66/110,66/0,00
+401078104/Seguro de vida   personal contratado/3,60/0,00/0,00/1.103,05/0,00/299,85/299,85/299,85/299,85/299,85/0,00
+401078200/Ayuda a personal contratado para adquirir uniformes y utiles escolares/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078300/Dotacion de uniformes al personal contratdos/26,70/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078400/Aporte patronal para gastos de guarderia y preescolar  hijos  al  personal contratado/20,11/0,00/0,00/37,38/0,00/0,00/12,72/12,72/0,00/0,00/0,00
+401078500/Aporte para la adquisicion de juguete para los hijos del personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079600/Otras subvenciones a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079601/Lentes y protesis a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079602/Plan vacacional y campamentos hijos de empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079700/Otras subvenciones a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079701/Aportes para lentes a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079702/Protesis a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079703/Plan vacacional Y campamentos hijos a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401080000/Prestaciones sociales e indemnizaciones a empleados, obreros, contratados, personal militar y parlamentarios/955,99/0,00/3.529,32/4.782,42/0,00/2.878,12/1.904,30/1.904,30/2.878,12/2.878,12/0,00
+401080100/Prestaciones sociales e indemnizaciones a empleados/194,01/0,00/0,00/2.301,62/0,00/1.483,72/817,90/817,90/1.483,72/1.483,72/0,00
+401080200/Prestaciones sociales e indemnizaciones a obreros/388,17/0,00/1.906,05/772,25/0,00/620,00/152,25/152,25/620,00/620,00/0,00
+401080300/Prestaciones sociales e indemnizaciones al personal contratado/370,26/0,00/1.623,27/1.665,01/0,00/761,65/903,36/903,36/761,65/761,65/0,00
+401080700/Prestaciones sociales e indemnizaciones al personal de Alto Nivel y Direccion/3,55/0,00/0,00/43,54/0,00/12,75/30,79/30,79/12,75/12,75/0,00
+401090000/Capacitacin y adiestramiento realizado por personal del organismo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401090100/Capacitacin y adiestramiento realizado por personal del organismo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401960000/Otros gastos del personal empleado/0,00/0,00/0,00/629,08/0,00/0,00/551,29/551,29/0,00/0,00/0,00
+401960100/Otros gastos del personal empleado/0,00/0,00/0,00/629,08/0,00/0,00/551,29/551,29/0,00/0,00/0,00
+401970000/Otros gastos del personal obrero/0,00/0,00/0,00/519,00/0,00/0,00/519,00/519,00/0,00/0,00/0,00
+401970100/Otros gastos del personal obrero/0,00/0,00/0,00/519,00/0,00/0,00/519,00/519,00/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/0,00/0,00/0,00/1.324,52/0,00/672,00/91,87/91,87/672,00/672,00/0,00
+403090000/Viaticos y pasajes/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403090100/Viaticos y pasajes dentro del pais/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403100000/Servicios profesionales y tecnicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403100700/Servicios de capacitacin y adiestramiento/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403160000/Servicios de diversion, esparcimiento y culturales/0,00/0,00/0,00/3,00/0,00/0,00/3,00/3,00/0,00/0,00/0,00
+403160100/Servicios de diversion, esparcimiento y culturales/0,00/0,00/0,00/3,00/0,00/0,00/3,00/3,00/0,00/0,00/0,00
+403180000/Impuestos indirectos/0,00/0,00/0,00/141,83/0,00/72,00/9,76/9,76/72,00/72,00/0,00
+403180100/Impuesto al valor agregado/0,00/0,00/0,00/141,83/0,00/72,00/9,76/9,76/72,00/72,00/0,00
+403190000/Comisiones por Servicios para cumplir con beneficios sociales/0,00/0,00/0,00/1.179,69/0,00/600,00/79,11/79,11/600,00/600,00/0,00
+403190100/Comisiones por Servicios para cumplir con beneficios sociales/0,00/0,00/0,00/1.179,69/0,00/600,00/79,11/79,11/600,00/600,00/0,00
+411000000/DISMINUCION DE PASIVOS/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010000/Disminucion de gastos de personal por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010100/Disminucion de sueldos,salarios y otras remuneraciones por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010101/Disminucion de sueldos,salarios y otras remuneraciones por pagar beneficiarios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401010100/Sueldos bÃ¡sicos personal fijo a tiempo completo/838,53/132,58/0,00/3.788,60/0,00/1.969,11/341,03/341,03/1.969,11/1.969,11/0,00
+401010200/Sueldos bÃ¡sicos personal fijo a tiempo parcial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401010300/Suplencias a empleados/28,77/0,00/0,00/164,22/0,00/0,00/164,22/164,22/0,00/0,00/0,00
+401010800/Sueldo al personal en trÃ¡mite de nombramiento/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401010900/Remuneraciones al personal en perÃ­odo de disponibilidad/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401011000/Salarios a obreros en puestos permanentes a tiempo completo/1.255,45/0,00/0,00/4.816,49/0,00/2.156,61/434,04/434,04/2.156,61/2.156,61/0,00
+401011200/Salarios a obreros en puestos no permanentes/383,01/0,00/0,00/1.528,31/0,00/326,56/617,45/617,45/326,56/326,56/0,00
+401011300/Suplencias a obreros/10,62/0,00/0,00/376,60/0,00/4,59/354,93/354,93/4,59/4,59/0,00
+401011800/Remuneraciones al personal contratado/1.165,80/0,00/0,00/7.171,44/0,00/1.869,68/3.199,85/3.199,85/1.905,39/2.185,39/10,59
+401011900/Retribuciones por becas-salarios, bolsas de trabajo, pasantÃ­as y similares/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401012900/Dietas/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401013600/Sueldos  al  personal de Alto nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401013800/Dietas  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401020000/Compensaciones previstas en las escalas de sueldos y salarios/794,88/0,00/0,00/1.372,61/0,00/634,60/507,74/507,74/634,60/634,60/0,00
+401020100/Compensaciones previstas en las escalas de sueldos al personal empleado fijo a tiempo completo/739,89/0,00/0,00/1.313,17/0,00/614,20/507,71/507,71/614,20/614,20/0,00
+401020200/Compensaciones previstas en las escalas de sueldos al personal empleado fijo a tiempo parcial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401020300/Compensaciones previstas en las escalas de salarios al personal obrero fijo a tiempo completo/54,99/0,00/0,00/59,44/0,00/20,40/0,03/0,03/20,40/20,40/0,00
+401030000/Primas a empleados, obreros, personal militar y parlamentarios/1.318,58/605,67/0,00/5.776,73/0,00/1.989,50/2.523,43/2.523,43/1.989,50/1.989,50/18,92
+401030100/Primas por mÃ©rito a empleados/55,87/0,00/0,00/311,41/0,00/57,28/229,57/229,57/57,28/57,28/0,00
+401030400/Primas por hijos a empleados/0,51/0,00/0,00/280,73/0,00/21,86/178,06/178,06/21,86/21,86/0,00
+401030800/Primas de profesionalizaciÃ³n a empleados/103,59/0,00/0,00/574,23/0,00/221,54/153,97/153,97/221,54/221,54/0,00
+401030801/Primas de profesionalizacion empleados/103,59/0,00/0,00/574,23/0,00/221,54/153,97/153,97/221,54/221,54/0,00
+401030802/Primas de profesionalizacion medicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030900/Primas por antigÃ¼edad a empleados/382,99/0,00/0,00/1.190,18/0,00/358,24/501,66/501,66/358,24/358,24/0,00
+401030901/Primas por antigÃ¼edad a los medicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030902/Primas por antigÃ¼edad a enfermeras/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401030903/Primas por antigÃ¼edad a empleados  Administrativo/382,99/0,00/0,00/1.166,11/0,00/358,24/477,59/477,59/358,24/358,24/0,00
+401030904/Prima de antiguedad de los medicos art 10/0,00/0,00/0,00/24,07/0,00/0,00/24,07/24,07/0,00/0,00/0,00
+401031000/Primas por jerarquÃ­a o responsabilidad en el cargo/132,96/605,67/0,00/1.201,82/0,00/442,25/665,99/665,99/442,25/442,25/6,73
+401031600/Primas por mÃ©rito a obreros (evaluacion )/60,31/0,00/0,00/283,59/0,00/240,62/0,03/0,03/240,62/240,62/0,00
+401031900/Primas por hijos de obreros/0,59/0,00/0,00/0,94/0,00/0,10/0,44/0,44/0,10/0,10/0,00
+401032100/Primas por antigÃ¼edad a obreros/304,99/0,00/0,00/550,55/0,00/264,20/9,36/9,36/264,20/264,20/0,00
+401032200/Primas de profesionales a obreros/13,55/0,00/0,00/52,22/0,00/21,11/8,94/8,94/21,11/21,11/0,00
+401033900/Primas por hijos al personal contratado/0,57/0,00/0,00/49,56/0,00/0,08/49,10/49,10/0,08/0,08/0,00
+401034000/Primas de profesionalizacion al personal contratado/14,24/0,00/0,00/166,32/0,00/8,67/138,39/138,39/8,67/8,67/1,06
+401034100/Primas por antigÃ¼edad a empleados  Contratado/141,21/0,00/0,00/348,90/0,00/110,52/166,87/166,87/110,52/110,52/0,23
+401034700/Pimas al Personal de Alto Nivel y de Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039600/Otras primas al personal Contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039700/Otras primas a empleados/106,84/0,00/0,00/765,89/0,00/243,03/420,86/420,86/243,03/243,03/10,90
+401039701/Primas de movilizacion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039702/Primas de frotnteras   ( enfermeras y medicos )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039703/Primas de dirigentes sindical/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039704/Prima de meritos empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039705/Primas de responsabilidad en el cargo empleados  ( 99)/106,84/0,00/0,00/765,89/0,00/243,03/420,86/420,86/243,03/243,03/10,90
+401039800/Otras primas a obreros/0,36/0,00/0,00/0,39/0,00/0,00/0,19/0,19/0,00/0,00/0,00
+401039801/Primas por responsabilida en el cargo a obreros/0,36/0,00/0,00/0,39/0,00/0,00/0,19/0,19/0,00/0,00/0,00
+401039802/Prima de profesionales obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401039803/primas incentivo al estudio obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040000/Complementos de sueldos y salarios/6.441,77/11.173,64/7.920,53/42.240,37/0,00/18.699,21/4.695,14/4.695,14/18.699,21/18.699,21/33,77
+401040100/Complemento a empleados por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040200/Complemento a empleados por trabajo nocturno/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040500/Complemento a empleados por gastos de representaciÃ³n/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401040800/Bono compensatorio de alimentaciÃ³n a empleados/589,44/0,00/0,00/6.008,94/0,00/2.283,84/998,40/998,40/2.283,84/2.283,84/0,00
+401041000/Complemento  a empleados por dias feriados/0,19/0,00/0,00/203,72/0,00/0,00/203,72/203,72/0,00/0,00/0,00
+401041400/Complemento a obreros por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401041500/Complemento a obreros por trabajo o jornada nocturna/273,05/0,00/0,00/1.078,35/0,00/422,14/202,20/202,20/422,14/422,14/0,00
+401041800/Bono compensatorio de alimentaciÃ³n a obreros/1.674,88/5.738,98/0,00/10.794,04/0,00/6.938,15/-0,01/-0,01/6.938,15/6.938,15/0,00
+401041900/Bono compensatorio de transporte a obreros/8,75/0,00/0,00/12,68/0,00/1,18/5,94/5,94/1,18/1,18/0,00
+401042000/Complemento  a  obreros por dias feriados/4,87/0,00/0,00/131,43/0,00/5,92/125,13/125,13/5,92/5,92/0,00
+401042400/Complemento al personal contratado por horas extraordinarias o por sobre tiempo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401042600/Bono compensatorio de alimentaciÃ³n al personal contratado/1.980,20/4.173,43/0,00/12.900,80/0,00/6.074,99/-0,02/-0,02/6.074,99/6.074,99/0,00
+401042700/Bono compensatorio de transporte al personal contratado/6,02/0,00/0,00/110,65/0,00/1,03/102,23/102,23/1,03/1,03/1,22
+401042800/Complementos al personal contratados por dias feriados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401044800/Complementos por Gastos de Representacion a Empleados/0,11/0,00/0,00/0,15/0,00/0,02/0,05/0,05/0,02/0,02/0,00
+401045100/Bono compensatorio de alimentaciÃ³n al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401045200/Bono compensatorio de transporte  al personal de Alto Nivel y Direccion/0,03/0,00/0,00/0,04/0,00/0,00/0,04/0,04/0,00/0,00/0,00
+401049600/Otros complementos a empleados/1.305,51/671,97/6.448,57/7.939,23/0,00/2.856,26/2.328,69/2.328,69/2.856,26/2.856,26/32,55
+401049601/Otros complementos a empleados domingo y dias feriados/0,00/0,70/0,00/0,70/0,00/0,00/0,70/0,70/0,00/0,00/0,00
+401049602/Otros complementos a empleados  horas adicionales personal medico/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049603/Otros complementos a empleados bono medicinas/24,03/0,00/0,00/45,36/0,00/0,00/45,36/45,36/0,00/0,00/0,00
+401049604/Otros complementos a empleados  otras asignaciones/5,57/0,00/0,00/2.128,42/0,00/33,28/782,28/782,28/33,28/33,28/0,00
+401049605/Otros complementos a empleados  bono unico/0,00/0,00/5.551,01/1.727,84/0,00/1.608,71/25,64/25,64/1.608,71/1.608,71/0,00
+401049606/Otros complementos a empleados  bono produccion/0,00/99,28/0,00/99,28/0,00/0,00/99,28/99,28/0,00/0,00/0,00
+401049607/Otros complementos a empleados  horas adicionales gremios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049609/Otros complementos a empleados  bono por aÃ±os de servicios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049610/Otros complementos a empleados  ayuda por hijo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049611/Otros complementos a empleados  hijos excepcionales/0,12/13,53/0,00/19,78/0,00/0,04/19,70/19,70/0,04/0,04/0,00
+401049612/Otros complementos a empleados  bono profesionalizacion contratado/115,61/31,25/0,00/434,82/0,00/199,13/117,23/117,23/199,13/199,13/0,00
+401049613/Otros complementos a empleados  (   bono de gestion institucional  )/691,69/335,70/0,00/994,85/0,00/0,00/335,70/335,70/0,00/0,00/22,97
+401049615/Otros complementos a empleados  dif bono per, enfermera y ajuste otras asignaciones/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049616/Otros complementos a empleados  responsabilidad en el cargo/26,65/0,00/44,13/13,42/0,00/7,98/2,99/2,99/7,98/7,98/0,00
+401049617/Otros complementos a empleados  bono hallaca/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049618/Otros complementos a empleados  ( prima de transporte  )/4,33/0,00/348,45/192,31/0,00/30,83/28,45/28,45/30,83/30,83/0,00
+401049619/Otros complementos a empleados (  prima del hogar )/27,99/0,00/504,98/266,57/0,00/48,75/41,70/41,70/48,75/48,75/1,20
+401049620/Otros complementos a empleados  ( dias adicionales   )/84,12/0,00/0,00/226,66/0,00/90,85/99,24/99,24/90,85/90,85/0,00
+401049621/Otros complementos a empleados ( bono de nivelacion )/265,92/191,51/0,00/1.544,27/0,00/686,36/666,04/666,04/686,36/686,36/8,38
+401049622/Evaluacion Empleados Contratados/59,48/0,00/0,00/244,95/0,00/150,33/64,38/64,38/150,33/150,33/0,00
+401049623/Otros complementos a empleados Ajuste Salarial/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049624/Otros complementos a empleados  (  Prima de Asistencia Medicos )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049625/Otros complementos a empleados  (  Prima de  Medicos  Especialistas )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049626/Otros complementos a empleados  (  Prima de  Medicos  Dedicacion )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049700/Otros complementos a obreros/598,72/589,26/1.471,96/3.060,34/0,00/115,68/728,77/728,77/115,68/115,68/0,00
+401049701/Otros complementos a obreros dias adicionales/54,87/0,00/0,00/154,37/0,00/54,30/63,61/63,61/54,30/54,30/0,00
+401049702/Otros complementos obreros dias feriados/17,48/0,00/198,04/21,51/0,00/18,23/0,00/0,00/18,23/18,23/0,00
+401049703/Otros complementos a obreros  bono unico/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049704/Otros complementos a obreros   otras asignaciones/5,31/0,00/1.273,92/2.001,97/0,00/0,04/0,01/0,01/0,04/0,04/0,00
+401049705/Otros complementos a obreros bono medicina/21,22/0,00/0,00/41,72/0,00/0,00/41,72/41,72/0,00/0,00/0,00
+401049707/Compensacionpoe eficiencias y productividad obrero  (evaluacion )/0,00/0,00/0,00/51,35/0,00/0,00/51,35/51,35/0,00/0,00/0,00
+401049709/Otros complementos a obreros   ( movilizacion sindical    )/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049710/Otros complementos a obreros  (   bono de gestion institucional  )/467,12/545,31/0,00/697,16/0,00/0,00/545,31/545,31/0,00/0,00/0,00
+401049711/Otros complementos a obreros  bono hallaca/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401049712/Otros complementos a obreros  ( hijos excepcionalesl  )/0,04/0,00/0,00/0,07/0,00/0,00/0,07/0,07/0,00/0,00/0,00
+401049713/Otros complementos obreros  (  prima del hogar )/23,32/0,00/0,00/35,99/0,00/3,14/16,75/16,75/3,14/3,14/0,00
+401049714/Evaluacion Obreros Contratados/9,36/43,95/0,00/56,20/0,00/39,97/9,95/9,95/39,97/39,97/0,00
+401050000/Aguinaldos, utilidades o bonificaciÃ³n legal, y bono vacacional a empleados, obreros, contratados, personal militar y parlamentarios/1.073,49/0,00/916,22/3.325,34/0,00/1.367,24/615,21/615,21/1.367,24/1.367,24/0,00
+401050100/Aguinaldos a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050300/Bono vacacional a empleados/459,51/0,00/720,06/1.213,78/0,00/784,43/92,36/92,36/784,43/784,43/0,00
+401050400/Aguinaldos a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050600/Bono vacacional a obreros/490,31/0,00/0,00/924,04/0,00/332,81/75,05/75,05/332,81/332,81/0,00
+401050700/Aguinaldos al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401050800/Bono vacacional al personal contratado/123,39/0,00/196,16/1.187,24/0,00/250,00/447,52/447,52/250,00/250,00/0,00
+401051600/Aguinaldos al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401051800/Bono vacacional  al personal de Alto Nivel y Direccion/0,28/0,00/0,00/0,28/0,00/0,00/0,28/0,28/0,00/0,00/0,00
+401060000/Aportes patronales por empleados, obreros, personal militar y parlamentarios/956,02/223,13/0,00/2.772,68/0,00/1.721,10/495,28/495,28/1.721,10/1.721,10/3,50
+401060100/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por empleados/205,50/90,17/0,00/436,60/0,00/303,66/37,64/37,64/303,66/303,66/0,00
+401060300/Aporte patronal al Fondo de Jubilaciones por empleados/58,39/0,00/0,00/192,13/0,00/130,64/26,17/26,17/130,64/130,64/0,00
+401060400/Aporte Patronal al Fondo de Seguro de Paro Forzoso por empleados/45,68/20,46/0,00/114,55/0,00/80,04/8,11/8,11/80,04/80,04/0,00
+401060500/Aporte patronal al Fondo de Ahorro Habitacional por empleados/39,23/22,04/0,00/121,43/0,00/86,84/11,06/11,06/86,84/86,84/0,00
+401061000/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por obreros/223,56/57,75/0,00/391,61/0,00/300,97/2,12/2,12/300,97/300,97/0,00
+401061100/Aporte patronal al Fondo de Jubilaciones por obreros/53,14/3,11/0,00/143,27/0,00/110,12/7,26/7,26/110,12/110,12/0,00
+401061200/Aporte patronal al Fondo de Seguro de Paro Forzoso por obreros/50,10/13,50/0,00/88,06/0,00/67,68/0,47/0,47/67,68/67,68/0,00
+401061300/Aporte patronal al Fondo de Ahorro Habitacional por obreros/43,81/15,60/0,00/95,52/0,00/73,43/4,83/4,83/73,43/73,43/0,00
+401062500/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) por Persona Contratado/164,93/0,00/0,00/708,23/0,00/366,37/195,43/195,43/366,37/366,37/2,47
+401062600/Aporte patronal al Fondo de Ahorro Habitacional por Personal contratdo/31,90/0,00/0,00/219,61/0,00/103,89/82,52/82,52/103,89/103,89/0,48
+401062700/Aporte patronal al Fondo de Seguro de Paro Forzoso por personal  contratado/36,65/0,00/0,00/245,99/0,00/94,12/116,13/116,13/94,12/94,12/0,55
+401063900/Aporte patronal al Instituto Venezolano de los Seguros Sociales (IVSS) al personal de Alto Nivel y Direccion/1,41/0,00/0,00/5,51/0,00/1,85/-0,01/-0,01/1,85/1,85/0,00
+401064100/Aporte patronal al Fondo de Jubilaciones al  personal de Alto Nivel y Direccion/0,67/0,00/0,00/4,51/0,00/0,64/1,40/1,40/0,64/0,64/0,00
+401064200/Aporte patronal al Fondo de Ahorro Habitacional al personal de Alto Nivel y Direccion/0,44/0,50/0,00/3,51/0,00/0,85/-0,00/-0,00/0,85/0,85/0,00
+401064300/Aporte patronal al Fondo de Seguro de Paro Forzoso por personal de alto nivel y direccion/0,00/0,00/0,00/2,15/0,00/0,00/2,15/2,15/0,00/0,00/0,00
+401069400/Otors Aportes Patronales por empleados y Obreros por Personal de Alto Nivel y de Direccion/0,61/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070000/Asistencia socio-econÃ³mica a empleados, obreros, contratados, personal militar y parlamentarios/2.472,09/231,43/0,00/70.727,83/0,00/18.425,79/17.981,58/17.981,58/18.425,79/18.425,79/0,00
+401070100/CapacitaciÃ³n y adiestramiento a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070200/Becas a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070300/Ayudas por matrimonio a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070400/Ayudas por nacimiento de hijos a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070500/Ayudas por defunciÃ³n a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070600/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401070700/Aporte patronal a cajas de ahorro por empleados/83,42/53,08/0,00/274,12/0,00/191,04/38,44/38,44/191,04/191,04/0,00
+401070800/Aporte patronal al seguro de vida, accidentes personales, hospitalizacion, cirugia, maternidad (HCM) y gastos funerarios por empleados/289,70/0,00/0,00/11.040,31/0,00/2.225,01/2.225,02/2.225,02/2.225,01/2.225,01/0,00
+401070801/Aporte patronal po  gastos funerarios por empleados/15,42/0,00/0,00/721,46/0,00/192,56/192,55/192,55/192,56/192,56/0,00
+401070802/Aporte patronal al seguro de hospitalizacion, cirugia, maternidad (HCM) empleados/268,94/0,00/0,00/10.043,62/0,00/1.958,85/1.958,85/1.958,85/1.958,85/1.958,85/0,00
+401070803/Aporte por accidentes/3,77/0,00/0,00/76,53/0,00/19,84/19,85/19,85/19,84/19,84/0,00
+401070804/Seguro de vida/1,57/0,00/0,00/198,70/0,00/53,76/53,77/53,77/53,76/53,76/0,00
+401070900/Ayudas a empleados para adquisicion de uniformes y utiles escolares de sus hijos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071000/DotaciÃ³n de uniformes a empleados/14,51/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071001/DotaciÃ³n de uniformes a empleados/14,51/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071002/DotaciÃ³n de uniformes a empleados  a gremios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071100/Aporte patronal para gastos de guarderias y preescolar para hijos de empleados/112,08/0,00/0,00/38,08/0,00/0,00/30,54/30,54/0,00/0,00/0,00
+401071200/Aportes para la adquisicion de juguetes para los hijos del personal empleado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071700/Capacitacion y adiestramiento a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071800/Becas a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401071900/Ayudas por matrimonio de obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072000/Ayudas por nacimiento de hijos de obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072100/Ayudas por defuncion a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072200/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072300/Aporte patronal a cajas de ahorro por obreros/166,80/0,00/0,00/408,34/0,00/310,27/21,65/21,65/310,27/310,27/0,00
+401072400/Aporte patronal al seguro de vida, accidentes personales, hospitalizacoin, cirugia, maternidad (HCM) y gastos funerarios por obreros/974,14/0,00/0,00/12.382,61/0,00/3.111,40/3.111,40/3.111,40/3.111,40/3.111,40/0,00
+401072401/Gastos funerarios obreros/51,86/0,00/0,00/1.039,18/0,00/269,27/269,27/269,27/269,27/269,27/0,00
+401072402/Aporte patronal al seguro , hospitalizacoin, cirugia, maternidad (HCM) por obreros/904,31/0,00/0,00/10.948,06/0,00/2.739,20/2.739,21/2.739,21/2.739,20/2.739,20/0,00
+401072403/Aporte de accidentes/12,69/0,00/0,00/114,43/0,00/27,75/27,74/27,74/27,75/27,75/0,00
+401072404/seguro de vida/5,28/0,00/0,00/280,94/0,00/75,18/75,18/75,18/75,18/75,18/0,00
+401072500/Ayudas a obreros para adquisicion de uniformes y utiles escolares de sus hijos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401072600/Dotacion de uniformes a obreros/22,56/0,00/0,00/22,56/0,00/0,00/22,56/22,56/0,00/0,00/0,00
+401072700/Aporte patronal para gastos de guarderias y preescolar para hijos de obreros/25,34/0,00/0,00/8,60/0,00/0,00/2,07/2,07/0,00/0,00/0,00
+401072800/Aportes para la adquisicion de juguetes para los hijos del personal obrero/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076300/CapacitaciÃ³n y adiestramiento  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076400/Ayudas por matrimonio al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076500/Ayudas por nacimiento de hijos al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076700/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacion al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076800/Aporte patronal a cajas de ahorro por al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076900/Ayudas para medicinas, gastos medicos, odontolgicos y de hospitalizacional personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076901/Aporte patronal por  gastos funerarios al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076902/Seguro H.C.M.  al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076903/Aporte por accidentes al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401076904/Seguro de vida al personal de Alto Nivel y Direccion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077400/Capacitacion y adiestramiento al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077500/Becas al personal  contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077600/Ayudas por matrimonio al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077700/Ayudas por nacimiento  al personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401077900/Ayudas para medicinas, gastos medicos, odontologos personal contratdo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078000/Aporte patronal de caja de ahorro por personal contratado/72,48/178,35/0,00/350,37/0,00/178,65/107,75/107,75/178,65/178,65/0,00
+401078100/Aporte patronal a los servicios de salud, accidentes y gastos funerario al   personal contratado/664,25/0,00/0,00/46.165,46/0,00/12.409,42/12.409,43/12.409,43/12.409,42/12.409,42/0,00
+401078101/Aporte patronal  pos gastos  funerario al   personal contratado/35,36/0,00/0,00/3.973,15/0,00/1.073,94/1.073,95/1.073,95/1.073,94/1.073,94/0,00
+401078102/Aporte patronal al seguro HCM al   personal contratado/616,64/0,00/0,00/40.674,85/0,00/10.924,97/10.924,96/10.924,96/10.924,97/10.924,97/0,00
+401078103/Aporte patronal  por accidentel   personal contratado/8,65/0,00/0,00/414,41/0,00/110,66/110,67/110,67/110,66/110,66/0,00
+401078104/Seguro de vida   personal contratado/3,60/0,00/0,00/1.103,05/0,00/299,85/299,85/299,85/299,85/299,85/0,00
+401078200/Ayuda a personal contratado para adquirir uniformes y utiles escolares/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078300/Dotacion de uniformes al personal contratdos/26,70/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401078400/Aporte patronal para gastos de guarderia y preescolar  hijos  al  personal contratado/20,11/0,00/0,00/37,38/0,00/0,00/12,72/12,72/0,00/0,00/0,00
+401078500/Aporte para la adquisicion de juguete para los hijos del personal contratado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079600/Otras subvenciones a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079601/Lentes y protesis a empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079602/Plan vacacional y campamentos hijos de empleados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079700/Otras subvenciones a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079701/Aportes para lentes a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079702/Protesis a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401079703/Plan vacacional Y campamentos hijos a obreros/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401080000/Prestaciones sociales e indemnizaciones a empleados, obreros, contratados, personal militar y parlamentarios/955,99/0,00/3.529,32/4.782,42/0,00/2.878,12/1.904,30/1.904,30/2.878,12/2.878,12/0,00
+401080100/Prestaciones sociales e indemnizaciones a empleados/194,01/0,00/0,00/2.301,62/0,00/1.483,72/817,90/817,90/1.483,72/1.483,72/0,00
+401080200/Prestaciones sociales e indemnizaciones a obreros/388,17/0,00/1.906,05/772,25/0,00/620,00/152,25/152,25/620,00/620,00/0,00
+401080300/Prestaciones sociales e indemnizaciones al personal contratado/370,26/0,00/1.623,27/1.665,01/0,00/761,65/903,36/903,36/761,65/761,65/0,00
+401080700/Prestaciones sociales e indemnizaciones al personal de Alto Nivel y Direccion/3,55/0,00/0,00/43,54/0,00/12,75/30,79/30,79/12,75/12,75/0,00
+401090000/Capacitacin y adiestramiento realizado por personal del organismo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401090100/Capacitacin y adiestramiento realizado por personal del organismo/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401960000/Otros gastos del personal empleado/0,00/0,00/0,00/629,08/0,00/0,00/551,29/551,29/0,00/0,00/0,00
+401960100/Otros gastos del personal empleado/0,00/0,00/0,00/629,08/0,00/0,00/551,29/551,29/0,00/0,00/0,00
+401970000/Otros gastos del personal obrero/0,00/0,00/0,00/519,00/0,00/0,00/519,00/519,00/0,00/0,00/0,00
+401970100/Otros gastos del personal obrero/0,00/0,00/0,00/519,00/0,00/0,00/519,00/519,00/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/0,00/0,00/0,00/1.324,52/0,00/672,00/91,87/91,87/672,00/672,00/0,00
+403090000/Viaticos y pasajes/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403090100/Viaticos y pasajes dentro del pais/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403100000/Servicios profesionales y tecnicos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403100700/Servicios de capacitacin y adiestramiento/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403160000/Servicios de diversion, esparcimiento y culturales/0,00/0,00/0,00/3,00/0,00/0,00/3,00/3,00/0,00/0,00/0,00
+403160100/Servicios de diversion, esparcimiento y culturales/0,00/0,00/0,00/3,00/0,00/0,00/3,00/3,00/0,00/0,00/0,00
+403180000/Impuestos indirectos/0,00/0,00/0,00/141,83/0,00/72,00/9,76/9,76/72,00/72,00/0,00
+403180100/Impuesto al valor agregado/0,00/0,00/0,00/141,83/0,00/72,00/9,76/9,76/72,00/72,00/0,00
+403190000/Comisiones por Servicios para cumplir con beneficios sociales/0,00/0,00/0,00/1.179,69/0,00/600,00/79,11/79,11/600,00/600,00/0,00
+403190100/Comisiones por Servicios para cumplir con beneficios sociales/0,00/0,00/0,00/1.179,69/0,00/600,00/79,11/79,11/600,00/600,00/0,00
+411000000/DISMINUCION DE PASIVOS/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010000/Disminucion de gastos de personal por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010100/Disminucion de sueldos,salarios y otras remuneraciones por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411010101/Disminucion de sueldos,salarios y otras remuneraciones por pagar beneficiarios/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401000000/GASTOSDEPERSONAL/94.054.596,00/0,00/0,00/94.054.596,00/0,00/2.035.633,46/92.018.962,54/92.018.962,54/2.035.633,46/2.025.872,32/9.761,14
+402000000/MATERIALES, SUMINISTROS Y MERCANCÍAS/16.764.486,00/0,00/0,00/16.764.486,00/0,00/887.412,88/15.877.073,12/15.877.073,12/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/73.970.778,00/0,00/0,00/73.970.778,00/0,00/1.035.250,16/72.935.527,84/72.935.527,84/455.693,76/455.633,76/60,00
+404000000/ACTIVOS REALES/9.136.742,00/0,00/0,00/9.136.742,00/0,00/0,00/9.136.742,00/9.136.742,00/0,00/0,00/0,00
+407000000/TRANSFERENCIAS Y DONACIONES/14.823.186,00/0,00/0,00/14.823.186,00/0,00/466.266,13/14.356.919,87/14.356.919,87/124.049,18/103.169,18/20.880,00
+408000000/OTROS GASTOS/1.698.154,00/0,00/0,00/1.698.154,00/0,00/154.794,54/1.543.359,46/1.543.359,46/154.794,54/154.794,54/0,00
+411000000/DISMINUCIÓN DE PASIVOS/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401000000/GASTOSDEPERSONAL/94.054.596,00/0,00/0,00/94.054.596,00/0,00/2.035.633,46/92.018.962,54/92.018.962,54/2.035.633,46/2.025.872,32/9.761,14
+402000000/MATERIALES, SUMINISTROS Y MERCANCÍAS/16.764.486,00/0,00/0,00/16.764.486,00/0,00/887.412,88/15.877.073,12/15.877.073,12/0,00/0,00/0,00
+403000000/SERVICIOS NO PERSONALES/73.970.778,00/0,00/0,00/73.970.778,00/0,00/1.035.250,16/72.935.527,84/72.935.527,84/455.693,76/455.633,76/60,00
+404000000/ACTIVOS REALES/9.136.742,00/0,00/0,00/9.136.742,00/0,00/0,00/9.136.742,00/9.136.742,00/0,00/0,00/0,00
+407000000/TRANSFERENCIAS Y DONACIONES/14.823.186,00/0,00/0,00/14.823.186,00/0,00/466.266,13/14.356.919,87/14.356.919,87/124.049,18/103.169,18/20.880,00
+408000000/OTROS GASTOS/1.698.154,00/0,00/0,00/1.698.154,00/0,00/154.794,54/1.543.359,46/1.543.359,46/154.794,54/154.794,54/0,00
+411000000/DISMINUCIÓN DE PASIVOS/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401000000/GASTOS DE PERSONAL/1.148.162,00/0,00/0,00/1.148.162,00/0,00/336.637,85/811.524,15/811.524,15/304.437,85/304.332,85/105,00
+401010000/Sueldos, salarios y otras retribuciones/195.277,00/0,00/0,00/195.277,00/0,00/43.553,00/151.724,00/151.724,00/43.553,00/43.553,00/0,00
+401020000/Compensaciones previstas en las escalas de sueldos y salarios/202,00/0,00/0,00/202,00/0,00/200,00/2,00/2,00/200,00/200,00/0,00
+401030000/Primas/87.860,00/0,00/0,00/87.860,00/0,00/6.414,00/81.446,00/81.446,00/6.414,00/6.414,00/0,00
+401040000/Complementos de sueldos y salarios/284.195,00/0,00/0,00/284.195,00/0,00/91.830,00/192.365,00/192.365,00/59.630,00/59.593,71/36,29
+401050000/Aguinaldos, utilidades o bonificacion juridica, y bono vacacional/132.373,00/0,00/0,00/132.373,00/0,00/11.992,00/120.381,00/120.381,00/11.992,00/11.992,00/0,00
+401060000/Aportes patronales/41.711,00/0,00/0,00/41.711,00/0,00/4.809,00/36.902,00/36.902,00/4.809,00/4.809,00/0,00
+401070000/Asistencia socioeconomica/344.251,00/0,00/0,00/344.251,00/0,00/171.407,85/172.843,15/172.843,15/171.407,85/171.339,14/68,71
+401080000/Prestaciones sociales e indemnizaciones/62.293,00/0,00/0,00/62.293,00/0,00/6.432,00/55.861,00/55.861,00/6.432,00/6.432,00/0,00
+401960000/Otros gastos del personal empleado/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+401970000/Otros gastos del personal obrero/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+402000000/MATERIALES, SUMINISTROS Y MERCANCiAS/633.645,00/0,00/0,00/633.645,00/0,00/64.020,00/569.625,00/569.625,00/64.020,00/64.020,00/0,00
+402010000/Productos alimenticios y agropecuarios/25.074,00/0,00/0,00/25.074,00/0,00/1.000,00/24.074,00/24.074,00/1.000,00/1.000,00/0,00
+402020000/Productos de minas, canteras y yacimientos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+402030000/Textiles y vestuarios/10.172,00/0,00/0,00/10.172,00/0,00/1.100,00/9.072,00/9.072,00/1.100,00/1.100,00/0,00
+402040000/Productos de cuero y caucho/21.072,00/0,00/0,00/21.072,00/0,00/6.000,00/15.072,00/15.072,00/6.000,00/6.000,00/0,00
+402050000/Productos de papel, carton e impresos/61.848,00/0,00/0,00/61.848,00/0,00/13.700,00/48.148,00/48.148,00/13.700,00/13.700,00/0,00
+402060000/Productos quimicos y derivados/166.501,00/0,00/0,00/166.501,00/0,00/5.382,00/161.119,00/161.119,00/5.382,00/5.382,00/0,00
+402070000/Productos minerales no metalicos/200,00/0,00/0,00/200,00/0,00/200,00/0,00/0,00/200,00/200,00/0,00
+402080000/Productos metalicos/7.672,00/0,00/0,00/7.672,00/0,00/300,00/7.372,00/7.372,00/300,00/300,00/0,00
+402090000/Productos de madera/100,00/0,00/0,00/100,00/0,00/100,00/0,00/0,00/100,00/100,00/0,00
+402100000/Productos varios y utiles diversos/340.906,00/0,00/0,00/340.906,00/0,00/36.138,00/304.768,00/304.768,00/36.138,00/36.138,00/0,00
+402990000/Otros materiales y suministros/100,00/0,00/0,00/100,00/0,00/100,00/0,00/0,00/100,00/100,00/0,00
+403000000/SERVICIOS NO PERSONALES/668.600,00/15,00/15,00/668.600,00/0,00/253.200,37/415.399,63/415.399,63/153.990,21/153.990,21/0,00
+403010000/Alquileres de inmuebles/4.781,00/0,00/0,00/4.781,00/0,00/1.542,24/3.238,76/3.238,76/1.542,24/1.542,24/0,00
+403020000/Alquileres de maquinaria y equipos/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403040000/Servicios basicos/32.436,00/0,00/15,00/32.421,00/0,00/21.918,60/10.502,40/10.502,40/21.918,60/21.918,60/0,00
+403060000/Servicios de transporte y almacenaje/300,00/0,00/0,00/300,00/0,00/300,00/0,00/0,00/300,00/300,00/0,00
+403070000/Servicios de informacion, impresion y relaciones publicas/9.954,00/0,00/0,00/9.954,00/0,00/7.892,00/2.062,00/2.062,00/7.892,00/7.892,00/0,00
+403080000/Primas y otros gastos de seguros y comisiones bancarias/17.489,00/0,00/0,00/17.489,00/0,00/13.837,00/3.652,00/3.652,00/13.837,00/13.837,00/0,00
+403090000/Viaticos y pasajes/100,00/0,00/0,00/100,00/0,00/100,00/0,00/0,00/100,00/100,00/0,00
+403100000/Servicios profesionales, tecnicos y demas oficios y ocupaciones/44.126,00/0,00/0,00/44.126,00/0,00/930,00/43.196,00/43.196,00/930,00/930,00/0,00
+403110000/Conservacion y reparaciones menores de maquinaria y equipos/30.903,00/0,00/0,00/30.903,00/0,00/3.500,00/27.403,00/27.403,00/3.500,00/3.500,00/0,00
+403120000/Conservacion y reparaciones menores de obras/189.037,00/0,00/0,00/189.037,00/0,00/71.981,03/117.055,97/117.055,97/71.981,03/71.981,03/0,00
+403150000/Servicios fiscales/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+403160000/Servicios de diversion, esparcimiento y culturales/110,00/0,00/0,00/110,00/0,00/100,00/10,00/10,00/100,00/100,00/0,00
+403170000/Servicios de gestion administrativa prestados por organismos de asistencia tecnica/100,00/0,00/0,00/100,00/0,00/100,00/0,00/0,00/100,00/100,00/0,00
+403180000/Impuestos indirectos/252.505,00/15,00/0,00/252.520,00/0,00/45.273,50/207.246,50/207.246,50/31.589,34/31.589,34/0,00
+403190000/Comisiones por servicios para cumplir con los beneficios sociales/1.133,00/0,00/0,00/1.133,00/0,00/100,00/1.033,00/1.033,00/100,00/100,00/0,00
+403990000/Otros servicios no personales/85.626,00/0,00/0,00/85.626,00/0,00/85.626,00/0,00/0,00/100,00/100,00/0,00
+404000000/ACTIVOS REALES/501.607,00/0,00/0,00/501.607,00/0,00/2.350,00/499.257,00/499.257,00/2.350,00/2.350,00/0,00
+404010000/Repuestos, reparaciones, mejoras y adiciones mayores/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404020000/Conservacion, ampliaciones y mejoras mayores de obras/184.513,00/0,00/0,00/184.513,00/0,00/0,00/184.513,00/184.513,00/0,00/0,00/0,00
+404030000/Maquinaria y demas equipos de construccion, campo, industria y taller/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404040000/Equipos de transporte, traccion y elevacion/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404050000/Equipos de comunicaciones y de señalamiento/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404060000/Equipos medico  quirurgicos, dentales y de veterinaria/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404090000/Maquinas, muebles y demas equipos de oficina y alojamiento/100.350,00/0,00/0,00/100.350,00/0,00/2.350,00/98.000,00/98.000,00/2.350,00/2.350,00/0,00
+404110000/Inmuebles, maquinaria y equipos usados/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+404150000/Construcciones del dominio privado/108.369,00/0,00/0,00/108.369,00/0,00/0,00/108.369,00/108.369,00/0,00/0,00/0,00
+404160000/Construcciones del dominio publico/108.375,00/0,00/0,00/108.375,00/0,00/0,00/108.375,00/108.375,00/0,00/0,00/0,00
+404990000/Otros activos reales/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+407000000/TRANSFERENCIAS Y DONACIONES/1.143.858,00/0,00/0,00/1.143.858,00/0,00/4.667,00/1.139.191,00/1.139.191,00/4.667,00/4.667,00/0,00
+407010000/Transferencias y donaciones corrientes internas/1.141.816,00/0,00/0,00/1.141.816,00/0,00/4.667,00/1.137.149,00/1.137.149,00/4.667,00/4.667,00/0,00
+407030000/Transferencias y donaciones de capital internas/2.042,00/0,00/0,00/2.042,00/0,00/0,00/2.042,00/2.042,00/0,00/0,00/0,00
+408000000/OTROS GASTOS/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+408080000/Indemnizaciones y sanciones pecuniarias/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411000000/DISMINUCION DE PASIVOS/22.565,00/0,00/0,00/22.565,00/0,00/10,00/22.555,00/22.555,00/10,00/10,00/0,00
+411010000/Disminucion de gastos de personal por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411020000/Disminucion de aportes patronales y retenciones laborales por pagar/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00/0,00
+411110000/Obligaciones de ejercicios economico financieros anteriores/22.555,00/0,00/0,00/22.555,00/0,00/0,00/22.555,00/22.555,00/0,00/0,00/0,00
+411980000/Disminucion de otros pasivos a corto plazo/10,00/0,00/0,00/10,00/0,00/10,00/0,00/0,00/10,00/10,00/0,00
+498000000/RECTIFICACIONES AL PRESUPUESTO/41.603,00/0,00/0,00/41.603,00/0,00/0,00/41.603,00/41.603,00/0,00/0,00/0,00
+498010000/Rectificaciones al presupuesto/41.603,00/0,00/0,00/41.603,00/0,00/0,00/41.603,00/41.603,00/0,00/0,00/0,00

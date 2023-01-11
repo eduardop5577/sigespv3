@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Mantenimiento Modulo de Contabilidad</title>
+	<script type="text/javascript">
+		var sistema='INS';
+		var vista='sigesp_vis_ins_contabilidad.html';
+		var tbnuevo = false;
+		var tbactualizar = false;
+		var tbadministrativo = false;
+                var barraherramienta = true; 
+	</script>
+    <script type="text/javascript" src="../../base/librerias/js/general/sigesp_lib_comunes.js"></script>
+    <script type="text/javascript" src="js/sigesp_vis_ins_contabilidad.js"></script>
+</head>
+<body class="modfondo" >
+<div id="barra_herramientas"></div>
+<div id="formularioINScontabilidad" class="page-content font-page">
+    <div class="container-fluid">    
+        <div class="form50">
+            <form>
+                <div class="row btituloform form-row">
+                    <h5>Mantenimiento Modulo de Contabilidad</h5>
+                </div> 
+                <div class="row form-row">
+                    <label for="chkreprocesar_saldo" class="control-label">Reprocesar Saldos</label>
+                    <input class="form-group" name="chkreprocesar_saldo" type="checkbox" id="chkreprocesar_saldo" value="1">
+                </div>        
+                <div class="row form-row">
+                    <label for="chkreprocesar_nivel" class="control-label">Reprocesar Niveles y Referencias</label>
+                    <input class="form-group" name="chkreprocesar_nivel" type="checkbox" id="chkreprocesar_nivel" value="1">
+                </div>        
+                <div class="row form-row">
+                    <label for="chkreprocesar_plan" class="control-label">Reprocesar Plan de Cuentas</label>
+                    <input class="form-group" name="chkreprocesar_plan" type="checkbox" id="chkreprocesar_plan" value="1">
+                </div>        
+            </form>
+        </div>
+     </div>        
+</div>
+</body>
+</html>

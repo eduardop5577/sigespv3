@@ -1,0 +1,666 @@
+<?php
+/***********************************************************************************
+* @fecha de modificacion: 04/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+***********************************************************************************/
+
+    session_start();   
+	header("Pragma: public");
+	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+	header("Cache-Control: private",false);
+	if(!array_key_exists("la_logusr",$_SESSION))
+	{
+		print "<script language=JavaScript>";
+		print "close();";
+		print "</script>";		
+	}
+	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_encabezado_pagina($as_titulo,$as_moneda,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function: uf_print_encabezadopagina
+		//		    Acess: private 
+		//	    Arguments: as_titulo // Título del Reporte
+		//	    		   as_periodo_comp // Descripción del periodo del comprobante
+		//	    		   as_fecha_comp // Descripción del período de la fecha del comprobante 
+		//	    		   io_pdf // Instancia de objeto pdf
+		//    Description: función que imprime los encabezados por página
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$io_encabezado=$io_pdf->openObject();
+		$io_pdf->saveState();
+		$io_pdf->line(10,30,1000,30);
+		$io_pdf->rectangle(10,470,990,130);
+		
+		$li_tm=$io_pdf->getTextWidth(16,$as_titulo);
+		$tm=505-($li_tm/2);
+		$io_pdf->addText($tm,500,16,$as_titulo); // Agregar el título
+		
+		$li_tm=$io_pdf->getTextWidth(16,'<b>'.$as_moneda.'</b>');
+		$tm=505-($li_tm/2);
+		$io_pdf->addText($tm,480,12,'<b>'.$as_moneda.'</b>'); // Agregar el título
+		
+		$io_pdf->restoreState();
+		$io_pdf->closeObject();
+		$io_pdf->addObject($io_encabezado,'all');
+		
+	}// end function uf_print_encabezadopagina
+	//--------------------------------------------------------------------------------------------------------------------------------
+	
+	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_titulo_reporte($io_encabezado,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function: uf_print_encabezadopagina
+		//		    Acess: private 
+		//	    Arguments: as_titulo // Título del Reporte
+		//	    		   as_periodo_comp // Descripción del periodo del comprobante
+		//	    		   as_fecha_comp // Descripción del período de la fecha del comprobante 
+		//	    		   io_pdf // Instancia de objeto pdf
+		//    Description: función que imprime los encabezados por página
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$io_pdf->saveState();
+		$io_pdf->ezSetY(590);
+		$ls_codemp    = $_SESSION["la_empresa"]["codemp"];
+		$ls_nombre    = $_SESSION["la_empresa"]["nombre"];
+		$ls_nomorgads = $_SESSION["la_empresa"]["nomorgads"];
+		$ls_codasiona = $_SESSION['la_empresa']['codasiona'];
+		require_once("../../../base/librerias/php/general/sigesp_lib_funciones2.php");
+		$io_funciones = new class_funciones();	
+		$ls_periodo   = $io_funciones->uf_convertirfecmostrar(substr($_SESSION['la_empresa']['periodo'],0,10));
+		$la_data=array(array('name'=>'<b>CODIGO PRESUPUESTARIO DEL ENTE:     </b>'.'<b>'.$ls_codasiona.'</b>'),
+		               array('name'=>'<b>DENOMINACION:    </b>'.'<b>'.$ls_nombre.'</b>'),
+					   array('name'=>'<b>ORGANO DE ADSCRIPCION:    </b>'.'<b>'.$ls_nomorgads.'</b>'),
+		               array('name'=>'<b>PERIODO PRESUPUESTARIO:    </b>'.'<b>'.$ls_periodo.'</b>'));
+		$la_columna=array('name'=>'','name'=>'','name'=>'','name'=>'');
+		$la_config =array('showHeadings'=>0,     // Mostrar encabezados
+						 'fontSize' => 8,       // Tamaño de Letras
+						 'titleFontSize' => 8, // Tamaño de Letras de los títulos
+						 'showLines'=>0,        // Mostrar Líneas
+						 'shaded'=>0,           // Sombra entre líneas
+						 'xPos'=>465,//65
+						 'shadeCol2'=>array(0.9,0.9,0.9), // Color de la sombra
+						 'xOrientation'=>'center', // Orientación de la tabla
+						 'width'=>900, // Ancho de la tabla
+						 'maxWidth'=>900);
+		$io_pdf->ezTable($la_data,$la_columna,'',$la_config);
+		$io_pdf->restoreState();
+		$io_pdf->closeObject();
+		$io_pdf->addObject($io_encabezado,'all');
+		
+	}// end function uf_print_encabezadopagina
+	//--------------------------------------------------------------------------------------------------------------------------------
+	
+	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_titulo($io_titulo,$as_trimestre,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function: uf_print_titulo
+		//		   Access: private 
+		//	    Arguments: as_codper // total de registros que va a tener el reporte
+		//	    		   as_nomper // total de registros que va a tener el reporte
+		//	    		   io_pdf // total de registros que va a tener el reporte
+		//    Description: función que imprime la cabecera de cada página
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$io_pdf->saveState();
+		$io_pdf->ezSetY(350); // para  el rectangulo
+		$io_pdf->ezSetCmMargins(6.5,3,3,3);
+		$la_data=array(array('name1'=>'',
+		                     'name2'=>'<b>EJECUTADO EN EL TRIMESTRE '.$as_trimestre.'</b>',
+		                     'name3'=>'<b>ACUMULADO AL TRIMESTRE '.$as_trimestre.'</b>',
+		                     'name4'=>''));
+		$la_columna=array('name1'=>'','name2'=>'','name3'=>'','name4'=>'');
+		$la_config =array('showHeadings'=>0,     // Mostrar encabezados
+						 'fontSize' => 7,       // Tamaño de Letras
+						 'titleFontSize' => 7, // Tamaño de Letras de los títulos
+						 'showLines'=>1,        // Mostrar Líneas
+						 'shaded'=>0,           // Sombra entre líneas
+						 'xPos'=>504,
+						 'shadeCol2'=>array(0.9,0.9,0.9), // Color de la sombra
+						 'xOrientation'=>'center', // Orientación de la tabla
+						 'width'=>990, // Ancho de la tabla
+						 'maxWidth'=>990,
+						 'colGap'=>0,
+						 'cols'=>array('name1'=>array('justification'=>'center','width'=>410),// Justificación y ancho de la columna
+						               'name2'=>array('justification'=>'center','width'=>210),// Justificación y ancho de la columna
+						               'name3'=>array('justification'=>'center','width'=>280),// Justificación y ancho de la columna
+									   'name4'=>array('justification'=>'center','width'=>90))); // Justificación y ancho de la columna
+		$io_pdf->ezTable($la_data,$la_columna,'',$la_config);
+		$io_pdf->restoreState();
+		$io_pdf->closeObject();
+		$io_pdf->addObject($io_titulo,'all');
+	}// end function uf_print_titulo
+	//--------------------------------------------------------------------------------------------------------------------------------	//--------------------------------------------------------------------------------------------------------------------------------
+	
+	//--------------------------------------------------------------------------------------------------------------------------------	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_cabecera($io_cabecera,$as_trimestre,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function: uf_print_cabecera
+		//		   Access: private 
+		//	    Arguments: as_codper // total de registros que va a tener el reporte
+		//	    		   as_nomper // total de registros que va a tener el reporte
+		//	    		   io_pdf // total de registros que va a tener el reporte
+		//    Description: función que imprime la cabecera de cada página
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$io_pdf->saveState();
+		$la_data=array(array('cuenta'=>'<b>PARTIDA</b>',
+		                     'denominacion'=>'<b>DENOMINACION</b>',
+							 'presupuesto'=>'<b>PRESUPUESTO APROBADO</b>',
+		                     'presupuesto_modificado'=>'<b>PRESUPUESTO MODIFICADO</b>',
+							 'programado'=>'<b>PROGRAMADO EN EL TRIMESTRE '.$as_trimestre.'</b>',
+							 'compromiso'=>'<b>COMPROMISO</b>',
+							 'causado'=>'<b>CAUSADO</b>',
+							 'pagado'=>'<b>PAGADO</b>',
+							 'programado_acumulado'=>'<b>PROGRAMADO ACUMULADO</b>',
+							 'compromiso_acumulado'=>'<b>COMPROMISO ACUMULADO</b>',
+							 'causado_acumulado'=>'<b>CAUSADO ACUMULADO</b>',
+							 'pagado_acumulado'=>'<b>PAGADO ACUMULADO</b>',
+							 'disponibilidad'=>'<b>DISPONIBILIDAD</b>'));
+		$la_columna=array('cuenta'=>'','denominacion'=>'','presupuesto'=>'',
+		                  'presupuesto_modificado'=>'','programado'=>'','compromiso'=>'',
+						  'causado'=>'','pagado'=>'','programado_acumulado'=>'','compromiso_acumulado'=>'',
+						  'causado_acumulado'=>'','pagado_acumulado'=>'',
+						  'disponibilidad'=>'');
+		$la_config=array('showHeadings'=>0,     // Mostrar encabezados
+						 'fontSize' => 7,       // Tamaño de Letras
+						 'titleFontSize' => 7, // Tamaño de Letras de los títulos
+						 'showLines'=>2,        // Mostrar Líneas
+						 'shaded'=>0,           // Sombra entre líneas
+						 'shadeCol2'=>array(0.9,0.9,0.9), // Color de la sombra
+						 'xOrientation'=>'center', // Orientación de la tabla
+						 'width'=>990, // Ancho de la tabla
+						 'maxWidth'=>990,
+						 'colGap'=>0,
+						 'cols'=>array('cuenta'=>array('justification'=>'center','width'=>60), // Justificación y ancho de la columna
+						 			   'denominacion'=>array('justification'=>'center','width'=>130), // Justificación y ancho de la columna
+						 			   'presupuesto'=>array('justification'=>'center','width'=>80), // Justificación y ancho de la columna
+						 			   'presupuesto_modificado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+						 			   'programado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'compromiso'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'causado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'pagado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'programado_acumulado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'compromiso_acumulado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'causado_acumulado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'pagado_acumulado'=>array('justification'=>'center','width'=>70), // Justificación y ancho de la columna
+									   'disponibilidad'=>array('justification'=>'center','width'=>90))); // Justificación y ancho de la columna
+	$io_pdf->ezTable($la_data,$la_columna,'',$la_config);
+	$io_pdf->restoreState();
+	$io_pdf->closeObject();
+	$io_pdf->addObject($io_cabecera,'all');
+	}// end function uf_print_cabecera
+	//--------------------------------------------------------------------------------------------------------------------------------
+
+	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_detalle($la_data,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function: uf_print_detalle
+		//		    Acess: private 
+		//	    Arguments: la_data // arreglo de información
+		//	   			   io_pdf // Objeto PDF
+		//    Description: función que imprime el detalle
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$la_config=array('showHeadings'=>0, // Mostrar encabezados
+						 'fontSize' => 7, // Tamaño de Letras
+						 'titleFontSize' => 7,  // Tamaño de Letras de los títulos
+						 'showLines'=>2, // Mostrar Líneas
+						 'shaded'=>0, // Sombra entre líneas
+						 'colGap'=>0, // separacion entre tablas
+						 'width'=>990, // Ancho de la tabla
+						 'maxWidth'=>990, // Ancho Máximo de la tabla
+						 'xOrientation'=>'center', // Orientación de la tabla
+						 'cols'=>array('cuenta'=>array('justification'=>'center','width'=>60), // Justificación y ancho de la columna
+						 			   'denominacion'=>array('justification'=>'left','width'=>130), // Justificación y ancho de la columna
+						 			   'presupuesto'=>array('justification'=>'right','width'=>80), // Justificación y ancho de la columna
+						 			   'presupuesto_modificado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+						 			   'programado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'compromiso'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'causado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'pagado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'programado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'compromiso_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'causado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'pagado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'disponibilidad'=>array('justification'=>'right','width'=>90))); // Justificación y ancho de la columna
+		$la_columnas=array('cuenta'=>'',
+						   'denominacion'=>'',
+						   'presupuesto'=>'',
+						   'presupuesto_modificado'=>'',
+						   'programado'=>'',
+						   'compromiso'=>'',
+						   'causado'=>'',
+						   'pagado'=>'',
+						   'programado_acumulado'=>'',
+						   'compromiso_acumulado'=>'',
+						   'causado_acumulado'=>'',
+						   'pagado_acumulado'=>'',
+						   'disponibilidad'=>'');
+		$io_pdf->ezTable($la_data,$la_columnas,'',$la_config);
+	}// end function uf_print_detalle
+	//--------------------------------------------------------------------------------------------------------------------------------
+
+	//--------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_pie_cabecera($la_data_tot,$io_pdf)
+	{
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//       Function : uf_print_pie_cabecera
+		//		    Acess : private 
+		//	    Arguments : ad_total // Total General
+		//    Description : función que imprime el fin de la cabecera de cada página
+		//	   Creado Por: Ing. Yozelin Barragán
+		// Fecha Creación: 26/06/2006 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		global $io_pdf;
+		$la_config=array('showHeadings'=>0, // Mostrar encabezados
+						 'fontSize' => 8, // Tamaño de Letras
+						 'titleFontSize' => 8,  // Tamaño de Letras de los títulos
+						 'showLines'=>2, // Mostrar Líneas
+						 'shaded'=>0, // Sombra entre líneas
+						 'colGap'=>0, // separacion entre tablas
+						 'width'=>990, // Ancho de la tabla
+						 'maxWidth'=>990, // Ancho Máximo de la tabla
+						 'xOrientation'=>'center', // Orientación de la tabla
+						 'cols'=>array('total'=>array('justification'=>'right','width'=>190),// Justificación y ancho de la columna
+						 			   'presupuesto'=>array('justification'=>'right','width'=>80), // Justificación y ancho de la columna
+						 			   'presupuesto_modificado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+						 			   'programado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'compromiso'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'causado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'pagado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'programado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'compromiso_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'causado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'pagado_acumulado'=>array('justification'=>'right','width'=>70), // Justificación y ancho de la columna
+									   'disponibilidad'=>array('justification'=>'right','width'=>90))); // Justificación y ancho de la columna
+		
+		$la_columnas=array('total'=>'',
+		                   'presupuesto'=>'',
+						   'presupuesto_modificado'=>'',
+						   'programado'=>'',
+						   'compromiso'=>'',
+						   'causado'=>'',
+						   'pagado'=>'',
+						   'programado_acumulado'=>'',
+						   'compromiso_acumulado'=>'',
+						   'causado_acumulado'=>'',
+						   'pagado_acumulado'=>'',
+						   'disponibilidad'=>'');
+		$io_pdf->ezTable($la_data_tot,$la_columnas,'',$la_config);
+	}// end function uf_print_pie_cabecera
+	//--------------------------------------------------------------------------------------------------------------------------------------
+	function uf_print_cabecera_estructura($la_codestproD,$la_denestproD,$la_codestproH,$la_denestproH,$io_pdf)
+	{
+		$io_pdf->ezSetY(460);
+		$la_data[1]=array('titulo1'=>'<b> Estructura Desde</b>', 'titulo2'=>'<b> Estructura Hasta</b>');
+		$la_columnas=array('titulo1'=>'', 'titulo2'=>'');
+		$la_config=array('showHeadings'=>0, // Mostrar encabezados
+				'fontSize' => 9, // Tamaño de Letras
+				'titleFontSize' => 12,  // Tamaño de Letras de los títulos
+				'showLines'=>1, // Mostrar Líneas
+				'shaded'=>2, // Sombra entre líneas
+				'width'=>970, // Ancho de la tabla
+				'maxWidth'=>970, // Ancho Máximo de la tabla
+				'xOrientation'=>'center', // Orientación de la tabla
+				'outerLineThickness'=>0.5,
+				'innerLineThickness' =>0.5,
+				'cols'=>array('titulo1'=>array('justification'=>'center','width'=>485),
+						      'titulo2'=>array('justification'=>'center','width'=>485))); // Justificación y ancho de la columna
+		$io_pdf->ezTable($la_data,$la_columnas,'',$la_config);
+		unset($la_data);
+		unset($la_columnas);
+		unset($la_config);  
+		
+		$ls_estmodest  = $_SESSION["la_empresa"]["estmodest"];
+		$li_nomestpro1 = $_SESSION["la_empresa"]["nomestpro1"];
+		$li_nomestpro2 = $_SESSION["la_empresa"]["nomestpro2"];
+		$li_nomestpro3 = $_SESSION["la_empresa"]["nomestpro3"];
+		$li_nomestpro4 = $_SESSION["la_empresa"]["nomestpro4"];
+		$li_nomestpro5 = $_SESSION["la_empresa"]["nomestpro5"];
+		$li_loncodestpro1 = $_SESSION["la_empresa"]["loncodestpro1"];
+		$li_loncodestpro2 = $_SESSION["la_empresa"]["loncodestpro2"];
+		$li_loncodestpro3 = $_SESSION["la_empresa"]["loncodestpro3"];
+		$li_loncodestpro4 = $_SESSION["la_empresa"]["loncodestpro4"];
+		$li_loncodestpro5 = $_SESSION["la_empresa"]["loncodestpro5"];
+	
+		$ls_codestpro1    = trim(substr($la_codestproD["codestpro1"],-$li_loncodestpro1));
+		$ls_codestpro2    = trim(substr($la_codestproD["codestpro2"],-$li_loncodestpro2));
+		$ls_codestpro3    = trim(substr($la_codestproD["codestpro3"],-$li_loncodestpro3));
+		$ls_codestpro4    = trim(substr($la_codestproD["codestpro4"],-$li_loncodestpro4));
+		$ls_codestpro5    = trim(substr($la_codestproD["codestpro5"],-$li_loncodestpro5));
+		
+		$ls_codestpro1H    = trim(substr($la_codestproH["codestpro1"],-$li_loncodestpro1));
+		$ls_codestpro2H    = trim(substr($la_codestproH["codestpro2"],-$li_loncodestpro2));
+		$ls_codestpro3H    = trim(substr($la_codestproH["codestpro3"],-$li_loncodestpro3));
+		$ls_codestpro4H    = trim(substr($la_codestproH["codestpro4"],-$li_loncodestpro4));
+		$ls_codestpro5H    = trim(substr($la_codestproH["codestpro5"],-$li_loncodestpro5));
+		
+	
+		if ($ls_estmodest==1) {
+			$ls_datat1[1]=array('nombre1'=>'<b>'.$li_nomestpro1.":</b> ",'codestpro1'=>$ls_codestpro1,'denom1'=>$la_denestproD["denestpro1"],
+								'nombre2'=>'<b>'.$li_nomestpro1.":</b> ",'codestpro2'=>$ls_codestpro1H,'denom2'=>$la_denestproH["denestpro1"]);
+			$ls_datat1[2]=array('nombre1'=>'<b>'.$li_nomestpro2.":</b> ",'codestpro1'=>$ls_codestpro2,'denom1'=>$la_denestproD["denestpro2"],
+								'nombre2'=>'<b>'.$li_nomestpro2.":</b> ",'codestpro2'=>$ls_codestpro2H,'denom2'=>$la_denestproH["denestpro2"]);
+			$ls_datat1[3]=array('nombre1'=>'<b>'.$li_nomestpro3.":</b> ",'codestpro1'=>$ls_codestpro3,'denom1'=>$la_denestproD["denestpro3"],
+								'nombre2'=>'<b>'.$li_nomestpro3.":</b> ",'codestpro2'=>$ls_codestpro3H,'denom2'=>$la_denestproH["denestpro3"]);
+		}
+		else {
+			$ls_datat1[1]=array('nombre1'=>'<b>'.$li_nomestpro1.":</b> ",'codestpro1'=>$ls_codestpro1,'denom1'=>$la_denestproD["denestpro1"],
+					            'nombre2'=>'<b>'.$li_nomestpro1.":</b> ",'codestpro2'=>$ls_codestpro1H,'denom2'=>$la_denestproH["denestpro1"]);
+			$ls_datat1[2]=array('nombre1'=>'<b>'.$li_nomestpro2.":</b> ",'codestpro1'=>$ls_codestpro2,'denom1'=>$la_denestproD["denestpro2"],
+					            'nombre2'=>'<b>'.$li_nomestpro2.":</b> ",'codestpro2'=>$ls_codestpro2H,'denom2'=>$la_denestproH["denestpro2"]);
+			$ls_datat1[3]=array('nombre1'=>'<b>'.$li_nomestpro3.":</b> ",'codestpro1'=>$ls_codestpro3,'denom1'=>$la_denestproD["denestpro3"],
+					            'nombre2'=>'<b>'.$li_nomestpro3.":</b> ",'codestpro2'=>$ls_codestpro3H,'denom2'=>$la_denestproH["denestpro3"]);
+			$ls_datat1[4]=array('nombre1'=>'<b>'.$li_nomestpro4.":</b> ",'codestpro1'=>$ls_codestpro4,'denom1'=>$la_denestproD["denestpro4"],
+					            'nombre2'=>'<b>'.$li_nomestpro4.":</b> ",'codestpro2'=>$ls_codestpro4H,'denom2'=>$la_denestproH["denestpro4"]);
+			$ls_datat1[5]=array('nombre1'=>'<b>'.$li_nomestpro5.":</b> ",'codestpro1'=>$ls_codestpro5,'denom1'=>$la_denestproH["denestpro5"],
+					            'nombre2'=>'<b>'.$li_nomestpro5.":</b> ",'codestpro2'=>$ls_codestpro5H,'denom2'=>$la_denestproH["denestpro5"]);
+		}
+		
+		$la_config=array('showHeadings'=>0, // Mostrar encabezados
+				'fontSize' =>7, // Tamaño de Letras
+				'titleFontSize' => 7,  // Tamaño de Letras de los títulos
+				'showLines'=>0, // Mostrar Líneas
+				'shaded'=>0, // Sombra entre líneas
+				'colGap'=>1, // separacion entre tablas
+				'width'=>970, // Ancho de la tabla
+				'maxWidth'=>970, // Ancho Máximo de la tabla
+				'xOrientation'=>'center', // Orientación de la tabla
+				'cols'=>array('nombre1'=>array('justification'=>'left','width'=>80),
+						'codestpro1'=>array('justification'=>'right','width'=>60),
+						'denom1'=>array('justification'=>'left','width'=>345),
+						'nombre2'=>array('justification'=>'left','width'=>80),
+						'codestpro2'=>array('justification'=>'right','width'=>60),
+						'denom2'=>array('justification'=>'left','width'=>345)));
+		$la_columna=array('nombre1'=>'','codestpro1'=>'','denom1'=>'','nombre2'=>'','codestpro2'=>'','denom2'=>'');
+		$io_pdf->ezTable($ls_datat1,$la_columna,'',$la_config);
+		unset($ls_datat1);
+		unset($la_config);
+		unset($la_columna);
+	
+		return $io_pdf;
+	}
+	//--------------------------------------------------------------------------------------------------------------------------------
+	
+		require_once("../../../base/librerias/php/ezpdf/class.ezpdf.php");
+		require_once("../../../base/librerias/php/general/sigesp_lib_funciones2.php");
+		$io_funciones=new class_funciones();	
+		require_once("sigesp_spg_funciones_reportes.php");
+		$io_function_report=new sigesp_spg_funciones_reportes();	
+		require_once("../../../base/librerias/php/general/sigesp_lib_fecha.php");
+		$io_fecha = new class_fecha();
+		require_once("sigesp_spg_class_reportes_instructivos.php");
+		$io_report = new sigesp_spg_class_reportes_instructivos();
+		require_once("../../../modelo/servicio/spg/sigesp_srv_spg_utilidadreporte.php");
+		$io_utilidad = new ServicioUtilidadReporte();
+	//-----------------------------------------------------------------------------------------------------------------------------
+	
+	//--------------------------------------------------  Parámetros para Filtar el Reporte  -----------------------------------------
+		$ldt_periodo=$_SESSION["la_empresa"]["periodo"];
+		$li_ano=substr($ldt_periodo,0,4);
+		$li_estmodest=$_SESSION["la_empresa"]["estmodest"];
+
+		$ls_trimestre=$_GET["trimestre"];
+		$li_mesdes=substr($ls_trimestre,0,2);
+		$ldt_fecdes=$li_ano."-".$li_mesdes."-01";
+		$li_meshas=substr($ls_trimestre,2,2);
+		switch($ls_trimestre)
+		{
+		 case '0103': $trimestre = "01";
+		 break;
+		 
+		 case '0406': $trimestre = "02";
+		 break;
+		 
+		 case '0709': $trimestre = "03";
+		 break;
+		 
+		 case '1012': $trimestre = "04";
+		 break;
+		
+		}
+		$ldt_ult_dia=$io_fecha->uf_last_day($li_meshas,$li_ano);
+		$fechas=$ldt_ult_dia;
+		$ldt_fechas=$io_funciones->uf_convertirdatetobd($fechas);
+		$ls_mesdes=$io_fecha->uf_load_nombre_mes($li_mesdes);
+		$ls_meshas=$io_fecha->uf_load_nombre_mes($li_meshas);
+		
+		//FILTRO POR ESTRUCTURA
+		$ls_codestpro1      = $_GET["codestpro1"];
+		$ls_codestpro2      = $_GET["codestpro2"];
+		$ls_codestpro3      = $_GET["codestpro3"];
+		$ls_codestpro4      = $_GET["codestpro4"];
+		$ls_codestpro5      = $_GET["codestpro5"];
+		$ls_estclades       = $_GET["estclades"];
+		$ls_codestpro1h     = $_GET["codestpro1h"];
+		$ls_codestpro2h     = $_GET["codestpro2h"];
+		$ls_codestpro3h     = $_GET["codestpro3h"];
+		$ls_codestpro4h     = $_GET["codestpro4h"];
+		$ls_codestpro5h     = $_GET["codestpro5h"];
+		$ls_estclahas       = $_GET["estclahas"];
+		
+		if($li_estmodest==1) {
+			if ($ls_codestpro1 != "0000000000000000000000000") {
+				$ls_programatica_desde = $ls_codestpro1."-".$ls_codestpro2."-".$ls_codestpro3;
+				$ls_programatica_hasta = $ls_codestpro1h."-".$ls_codestpro2h."-".$ls_codestpro3h;
+			}
+		}
+		elseif($li_estmodest==2) {
+			if ($ls_codestpro1 != "0000000000000000000000000") {
+				$ls_programatica_desde = $ls_codestpro1."-".$ls_codestpro2."-".$ls_codestpro3."-".$ls_codestpro4."-".$ls_codestpro5;
+				$ls_programatica_hasta = $ls_codestpro1h."-".$ls_codestpro2h."-".$ls_codestpro3h."-".$ls_codestpro4h."-".$ls_codestpro5h;
+			}
+		}
+		
+		$ls_codestproD = '';
+		if ($ls_codestpro1 != "0000000000000000000000000") {
+			$ls_codestproD = str_pad($ls_codestpro1,25,0,0).str_pad($ls_codestpro2,25,0,0).str_pad($ls_codestpro3,25,0,0).str_pad($ls_codestpro4,25,0,0).str_pad($ls_codestpro5,25,0,0).$ls_estclades;
+		}
+		
+		$ls_codestproH = '';
+		if ($ls_codestpro1h != "0000000000000000000000000") {
+			$ls_codestproH = str_pad($ls_codestpro1h,25,0,0).str_pad($ls_codestpro2h,25,0,0).str_pad($ls_codestpro3h,25,0,0).str_pad($ls_codestpro4h,25,0,0).str_pad($ls_codestpro5h,25,0,0).$ls_estclahas;
+		}
+		
+	//----------------------------------------------------  Parámetros del encabezado  ---------------------------------------------
+			$ls_titulo="<b>CONSOLIDADO DE EJECUCIÓN FINANCIERA TRIMESTRAL DE PROYECTOS Y ACCIONES CENTRALIZADAS POR PARTIDAS</b>";       
+	//--------------------------------------------------------------------------------------------------------------------------------
+    // Cargar el dts_cab con los datos de la cabecera del reporte( Selecciono todos comprobantes )	
+     $lb_valido=$io_report->uf_spg_reporte_consolidado_de_ejecucion_trimestral($ldt_fecdes,$ldt_fechas,$ls_mesdes,$ls_meshas,$ls_codestproD,$ls_codestproH);
+	 if($lb_valido==false) // Existe algún error ó no hay registros
+	 {
+		print("<script language=JavaScript>");
+		print(" alert('No hay nada que Reportar');"); 
+		print(" close();");
+		print("</script>");
+	 }
+	 else // Imprimimos el reporte
+	 {
+	    
+		set_time_limit(1800);
+		$io_pdf=new Cezpdf('LEGAL','landscape'); // Instancia de la clase PDF
+		$io_pdf->selectFont('../../../base/librerias/php/ezpdf/fonts/Helvetica.afm'); // Seleccionamos el tipo de letra
+		uf_print_encabezado_pagina($ls_titulo,'(En Bolivares Fuertes)',$io_pdf); // Imprimimos el encabezado de la página
+		if ($ls_codestpro1 != "0000000000000000000000000" && $ls_codestpro1h != "0000000000000000000000000")
+		{
+			$la_codestproD["codestpro1"] = $ls_codestpro1;
+			$la_codestproD["codestpro2"] = $ls_codestpro2;
+			$la_codestproD["codestpro3"] = $ls_codestpro3;
+			$la_codestproD["codestpro4"] = $ls_codestpro4;
+			$la_codestproD["codestpro5"] = $ls_codestpro5;
+			$la_denestproD["denestpro1"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro1, 1, $ls_estclades);
+			$la_denestproD["denestpro2"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro2, 2, $ls_estclades, $ls_codestpro1);
+			$la_denestproD["denestpro3"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro3, 3, $ls_estclades, $ls_codestpro1, $ls_codestpro2);
+			$la_denestproD["denestpro4"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro4, 4, $ls_estclades, $ls_codestpro1, $ls_codestpro2, $ls_codestpro3);
+			$la_denestproD["denestpro5"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro5, 5, $ls_estclades, $ls_codestpro1, $ls_codestpro2, $ls_codestpro3, $ls_codestpro4);
+			
+			$la_codestproH["codestpro1"] = $ls_codestpro1h;
+			$la_codestproH["codestpro2"] = $ls_codestpro2h;
+			$la_codestproH["codestpro3"] = $ls_codestpro3h;
+			$la_codestproH["codestpro4"] = $ls_codestpro4h;
+			$la_codestproH["codestpro5"] = $ls_codestpro5h;
+			$la_denestproH["denestpro1"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro1h, 1, $ls_estclahas);
+			$la_denestproH["denestpro2"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro2h, 2, $ls_estclahas, $ls_codestpro1h);
+			$la_denestproH["denestpro3"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro3h, 3, $ls_estclahas, $ls_codestpro1h, $ls_codestpro2h);
+			$la_denestproH["denestpro4"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro4h, 4, $ls_estclahas, $ls_codestpro1h, $ls_codestpro2h, $ls_codestpro3h);
+			$la_denestproH["denestpro5"] = $io_utilidad->obtenerDenominacionEstructura($ls_codestpro5h, 5, $ls_estclahas, $ls_codestpro1h, $ls_codestpro2h, $ls_codestpro3h, $ls_codestpro4h);
+			uf_print_cabecera_estructura($la_codestproD,$la_denestproD,$la_codestproH,$la_denestproH,$io_pdf);
+		}
+ 	    $io_pdf->ezStartPageNumbers(980,40,10,'','',1); // Insertar el número de página
+		$li_total=$io_report->dts_reporte->getRowCount("spg_cuenta");
+	    $ld_asignado_total=0;
+	    $ld_asignado_modificado_total=0;
+	    $ld_programado_trimestral_total=0;
+	    $ld_comprometer_total=0;
+	    $ld_causado_total=0;
+	    $ld_pagado_total=0;
+	    $ld_programado_acumulado_total=0;
+	    $ld_comprometer_acumulado_total=0;
+	    $ld_causado_acumulado_total=0;
+	    $ld_pagado_acumulado_total=0;
+	    $ld_disponibilidad_total=0;
+		$la_data=array();
+		for($z=1;$z<=$li_total;$z++)
+	    {
+			  $thisPageNum=$io_pdf->ezPageCount;
+			  $ls_spg_cuenta=substr(trim($io_report->dts_reporte->data["spg_cuenta"][$z]),0,3);
+			  $ls_denominacion=trim($io_report->dts_reporte->data["denominacion"][$z]);
+			  $ld_asignado=$io_report->dts_reporte->data["asignado"][$z];
+			  $ld_asignado_modificado=$io_report->dts_reporte->data["asignado_modificado"][$z];
+			  $ld_programado_trimestral=$io_report->dts_reporte->data["programado"][$z];
+			  $ld_comprometer=$io_report->dts_reporte->data["compromiso"][$z];
+			  $ld_causado=$io_report->dts_reporte->data["causado"][$z];
+			  $ld_pagado=$io_report->dts_reporte->data["pagado"][$z];
+			  $ld_programado_acumulado=$io_report->dts_reporte->data["programado_acumulado"][$z];
+			  $ld_comprometer_acumulado=$io_report->dts_reporte->data["compromiso_acumulado"][$z];
+			  $ld_causado_acumulado=$io_report->dts_reporte->data["causado_acumulado"][$z];
+			  $ld_pagado_acumulado=$io_report->dts_reporte->data["pagado_acumulado"][$z];
+			  $ld_disponibilidad=$io_report->dts_reporte->data["disponibilidad"][$z];
+			  
+			  $ld_asignado_total=$ld_asignado_total+$ld_asignado;
+			  if($ld_asignado == $ld_asignado_modificado)
+			  {
+			  	$ld_asignado_modificado = 0;
+			  }
+			  $ld_asignado_modificado_total=$ld_asignado_modificado_total+$ld_asignado_modificado;
+			  $ld_programado_trimestral_total=$ld_programado_trimestral_total+$ld_programado_trimestral;
+			  $ld_comprometer_total=$ld_comprometer_total+$ld_comprometer;
+			  $ld_causado_total=$ld_causado_total+$ld_causado;
+			  $ld_pagado_total=$ld_pagado_total+$ld_pagado;
+			  $ld_programado_acumulado_total=$ld_programado_acumulado_total+$ld_programado_acumulado;
+			  $ld_comprometer_acumulado_total=$ld_comprometer_acumulado_total+$ld_comprometer_acumulado;
+			  $ld_causado_acumulado_total=$ld_causado_acumulado_total+$ld_causado_acumulado;
+			  $ld_pagado_acumulado_total=$ld_pagado_acumulado_total+$ld_pagado_acumulado;
+			  $ld_disponibilidad_total=$ld_disponibilidad_total+$ld_disponibilidad;
+			  
+			  
+			  $ld_asignado=number_format($ld_asignado,2,",",".");
+			  $ld_asignado_modificado=number_format($ld_asignado_modificado,2,",",".");
+			  $ld_programado_trimestral=number_format($ld_programado_trimestral,2,",",".");
+			  $ld_comprometer=number_format($ld_comprometer,2,",",".");
+			  $ld_causado=number_format($ld_causado,2,",",".");
+			  $ld_pagado=number_format($ld_pagado,2,",",".");
+			  $ld_programado_acumulado=number_format($ld_programado_acumulado,2,",",".");
+			  $ld_comprometer_acumulado=number_format($ld_comprometer_acumulado,2,",",".");
+			  $ld_causado_acumulado=number_format($ld_causado_acumulado,2,",",".");
+			  $ld_pagado_acumulado=number_format($ld_pagado_acumulado,2,",",".");
+			  $ld_disponibilidad=number_format($ld_disponibilidad,2,",",".");
+			  
+			  if($ld_asignado_modificado == '0,00')
+			  {
+			    $ld_asignado_modificado = '';
+			  }
+			  
+			  $la_data[$z]=array('cuenta'=>$ls_spg_cuenta,'denominacion'=>$ls_denominacion,'presupuesto'=>$ld_asignado,
+			                     'presupuesto_modificado'=>$ld_asignado_modificado,'programado'=>$ld_programado_trimestral,
+								 'compromiso'=>$ld_comprometer,'causado'=>$ld_causado,'pagado'=>$ld_pagado,
+								 'programado_acumulado'=>$ld_programado_acumulado,'compromiso_acumulado'=>$ld_comprometer_acumulado,
+								 'causado_acumulado'=>$ld_causado_acumulado,'pagado_acumulado'=>$ld_pagado_acumulado,
+								 'disponibilidad'=>$ld_disponibilidad);
+		}
+	    $ld_asignado_total=number_format($ld_asignado_total,2,",",".");
+	    $ld_asignado_modificado_total=number_format($ld_asignado_modificado_total,2,",",".");
+	    $ld_programado_trimestral_total=number_format($ld_programado_trimestral_total,2,",",".");
+	    $ld_comprometer_total=number_format($ld_comprometer_total,2,",",".");
+	    $ld_causado_total=number_format($ld_causado_total,2,",",".");
+	    $ld_pagado_total=number_format($ld_pagado_total,2,",",".");
+	    $ld_programado_acumulado_total=number_format($ld_programado_acumulado_total,2,",",".");
+	    $ld_comprometer_acumulado_total=number_format($ld_comprometer_acumulado_total,2,",",".");
+	    $ld_causado_acumulado_total=number_format($ld_causado_acumulado_total,2,",",".");
+	    $ld_pagado_acumulado_total=number_format($ld_pagado_acumulado_total,2,",",".");
+	    $ld_disponibilidad_total=number_format($ld_disponibilidad_total,2,",",".");
+		
+		if(trim($ld_asignado_modificado_total) == trim($ld_asignado_total))
+		{
+			$ld_asignado_modificado_total = '';
+		}
+	  
+	    $la_data_totales[$z]=array('total'=>'<b>TOTALES Bs.</b>',
+		                           'presupuesto'=>$ld_asignado_total,
+		                           'presupuesto_modificado'=>$ld_asignado_modificado_total,
+							       'programado'=>$ld_programado_trimestral_total,
+							       'compromiso'=>$ld_comprometer_total,
+							       'causado'=>$ld_causado_total,
+							       'pagado'=>$ld_pagado_total,
+							       'programado_acumulado'=>$ld_programado_acumulado_total,
+							       'compromiso_acumulado'=>$ld_comprometer_acumulado_total,
+							       'causado_acumulado'=>$ld_causado_acumulado_total,
+							       'pagado_acumulado'=>$ld_pagado_acumulado_total,
+							       'disponibilidad'=>$ld_disponibilidad_total);
+							   
+		$io_encabezado=$io_pdf->openObject();
+		uf_print_titulo_reporte($io_encabezado,$io_pdf);
+		$io_titulo=$io_pdf->openObject();
+		uf_print_titulo($io_titulo,$trimestre,$io_pdf);
+		$io_cabecera=$io_pdf->openObject();
+		uf_print_cabecera($io_cabecera,$trimestre,$io_pdf);
+		$io_pdf->ezSetCmMargins(7.6,3,3,3);
+		if (count($la_data)>0)
+		{
+			uf_print_detalle($la_data,$io_pdf); // Imprimimos el detalle 
+			uf_print_pie_cabecera($la_data_totales,$io_pdf);
+		}
+		$io_pdf->stopObject($io_encabezado);
+		$io_pdf->stopObject($io_titulo);
+		$io_pdf->stopObject($io_cabecera);
+		unset($la_data);
+		unset($la_data_totales);
+		$io_pdf->ezStopPageNumbers(1,1);
+		if (isset($d) && $d)
+		{
+			$ls_pdfcode = $io_pdf->ezOutput(1);
+			$ls_pdfcode = str_replace("\n","\n<br>",htmlspecialchars($ls_pdfcode));
+			echo '<html><body>';
+			echo trim($ls_pdfcode);
+			echo '</body></html>';
+		}
+		else
+		{
+			$io_pdf->ezStream();
+		}
+		unset($io_pdf);
+	}//else
+	unset($io_report);
+	unset($io_funciones);
+?> 

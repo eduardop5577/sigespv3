@@ -1,0 +1,312 @@
+<!--**********************************************************************************
+* @fecha de modificacion: 04/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Verificar Documento firmado</title>
+    <script type="text/javascript">
+        var sistema='SFD';
+        var vista='sigesp_vis_sfd_verificar.html';
+        var tbnuevo = false;
+        var tbactualizar = false;
+        var tbadministrativo = false; 
+    </script>
+
+    <script type="text/javascript" src="../../base/librerias/js/general/sigesp_lib_comunes.js"></script>
+    <script type="text/javascript" src="../../vista/sfd/js/sigesp_vis_sfd_verificar.js"></script>
+
+    <!-- prueba-->
+    <link rel="stylesheet" media="screen" href="js/estilos/fileinput.css">
+    <link rel="stylesheet" media="screen" href="js/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="js/bootstrap-3.3.7/css/bootstrap_mod.css">
+    <script src="js/js2/jquery-3.1.0.js"></script> 
+    <script src="js/js2/file-input.js" type="text/javascript"></script> 
+    <script type="text/javascript" src="js/js2/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/js2/dataTables.bootstrap.min.js"></script>
+    <style>
+        .file-preview-thumbnails .file-preview-frame,
+        .file-preview-thumbnails .file-preview-frame object {
+            min-height: 300px !important;
+            width: 98% !important;
+        }
+        .file-preview-thumbnails .file-preview-frame video {
+            min-height: 300px !important;
+            width: 98% !important;
+        }
+        .file-preview-thumbnails .file-preview-frame audio {
+            min-height: 300px !important;
+            width: 98% !important;
+        }
+        .file-preview-thumbnails .file-preview-frame .file-preview-image {
+            min-height: 300px !important;
+            width: 98% !important;
+        }
+        .file-preview-thumbnails .file-preview-frame .file-preview-text {
+            min-height: 300px !important;
+            width: 98% !important;
+        }          
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#resetVerificacion").click(function() {// apply to reset button's click event
+                $("#respuestaVerificacion").html(''); 
+            });
+        });
+    </script>
+
+    <!--Función que captura el evento del button reset del formulario firmar y limpia el div respuesta (tabla de la firma)-->
+    <script>
+        $(document).ready(function() {
+            $("#reset").click(function() { // apply to reset button's click event
+                $("#respuesta").html(''); 
+            });
+        });
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $('table.display').dataTable();
+        });
+    </script>
+
+    <!--esto verifica el archivo cargado desde la pc-->
+    <script>
+        $(function(){
+            $("#verificar").on("submit", function(e){
+                e.preventDefault();
+                var f = $(this);
+                //var formData = new FormData(document.getElementById("verificar"));
+                var formData = new FormData();
+                //formData.append("dato", "valor");
+                formData.append("upload", $("#file-check-sign")[0].files[0]);
+                //formData.append(f.attr("name"), $(this)[0].files[0]);
+
+                $.ajax({               
+                    url: "https://murachi.cenditel.gob.ve/Murachi/0.1/archivos/firmados",
+                    headers: {"Authorization":"Basic YWRtaW46YWRtaW4="},
+                    type: "post",
+                    dataType: "json",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,             
+                    success: function(response) {
+                        //alert(JSON.stringify(response));
+                        var tempJson = JSON.stringify(response);
+                        var jsonparsed = JSON.parse(tempJson);
+                        var fileType = jsonparsed['mimeType'];
+                        var numeroFirmas = jsonparsed['numberOfSignatures'];//conocemos el numero de firmas del documento
+                        //alert(fileType);     
+                        var html;
+                        if(numeroFirmas!=0){
+                            if(fileType == 'application/pdf')
+                            { 
+                                html = manejoJsonPDF(JSON.stringify(response));
+                            }
+                            else 
+                            { 
+                                html ='<h2> Informaci&oacuten de la firma: </h2> \n '+
+                                 '<h4>Solo puede verificar archivos PDF</h4>';
+                            }
+                        }else
+                        {
+                          alert("Este documento no contiene firmas digitales")
+                          html=  '<h2> Informaci&oacuten de la firma:  </h2> \n '+
+                                 '<h4>N&uacutemero de firmas existentes en el archivo: 0 </h4>';
+
+                        }
+                        //alert(html);
+                        //alert("ver respuesta")
+                        document.getElementById("respuestaVerificacion").innerHTML = html;
+                        $('table.display').dataTable();
+                    },
+                    error: function(response) {
+                    //Que se ejecuta cuando finalice la petición de con error
+                    $("#respuestaVerificacion").html('Error...!!!');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        function manejoJsonPDF(json){
+            var fielJsonEs = {
+                fileId: "Identificador &uacutenico del archivo en el servidor", fileExist:"El archivo se carg&oacute exitosamente en el servidor", mimeType:"Tipo MIME del archivo verificado", error:"Extension not supported. En caso de que el archivo sea diferente de PDF y BDOC", numberOfSignatures:"N&uacutemero de firmas existentes en el archivo", signatures:"Lista de firmas", signatureType:"Tipo de firma de archivo PDF", signedOn:"Fecha en que se realiza la firma", integrityCheck:"Chequea la integridad de la firma", timeStamp:"Estampilla de tiempo", reason:"Raz&oacuten de la firma", location:"Ubicaci&oacuten donde se realiza la firma", alternativeNameOfTheSigner:"Nombre alternativo del firmante", signerCertificateValidFrom:"Fecha de inicio de validez del certificado", signerCertificateStillValid:"El certificado todav&iacutea est&aacute v&aacutelido", signerCertificateHasExpired:"El certificado expir&oacute", signatureCoversWholeDocument:"La firma abarca todo el documento PDF", filterSubtype:"Tipo de subfiltro: /adbe.pkcs7.sha1, /adbe.pkcs7.detached", signerCertificateSubject:"Sujeto firmante", signerCertificateValidAtTimeOfSigning:"El certificado es v&aacutelido en el momento de la firma", encryptionAlgorithm:"Algoritmo de cifrado", timeStampService:"Servicio de estampillado de tiempo", digestAlgorithm:"Algoritmo hash (rese&ntildea)", certificatesVerifiedAgainstTheKeyStore:"Certificado verificado contra el repositorio de certificados confiables", documentRevision:"N&uacutemero de revisi&oacuten del documento PDF", nameOfTheSigner:"Nombre del firmante", totalDocumentRevisions:"N&uacutemero total de revisiones del documento PDF", contactInfo:"Informaci&oacuten de contacto del firmante", timeStampVerified:"Estampilla de tiempo verificada", signerCertificateIssuer:"Emisor del certificado firmante", signerCertificateValidTo:"Fecha de fin de validez del certificado", signerCertificateSerial:"BDOC: Serial del certificado del firmante", signatureProfile:"BDOC: Perfil de la firma", signatureMethod:"BDOC: Algoritmo de firma utilizado", signatureId:"BDOC: identificador de la firma", signatureSigningTime:"Fecha en que se realiza la firma", signerCertificateIsValid:"El certificado todav&iacutea est&aacute v&aacutelido", signatureValidationException:"BDOC: Exepciones de la validaci&oacuten de la firma", isValid:"BDOC: Firma electr&oacutenica v&aacutelida", signerCertificateSubjectName:"Nombre del firmante", containerValidation:"BDOC: Especifica si el contenedor posee una estructura v&aacutelida", numberOfDataFiles:"BDOC: Cantidad de archivos incluidos en el contenedor BDOC", dataFiles:"BDOC: Lista de archivos incluidos en el contenedor", name:"BDOC: Nombre del archivo incluido en el contenedor", dataFileSize:"BDOC: Tama&ntildeo del archivo incluido en el contenedor", filename:"BDOC: Nombre del archivo incluido en el contenedor", mediaType:"BDOC: Tipo MIME del archivo incluido en el contenedor"
+            };
+            var objVarVerifique = JSON.parse(json);
+            var signatures = ''; //variable que maneja las firmas
+            var fields = ''; //variable que maneja los campos de la firma
+            var title = '<h2> Informaci&oacuten de la firma electr&oacutenica </h2> \n ';
+            var head = '<div class=\'container\'> \n <table id=\' \' class=\'display table table-striped table-bordered\' cellspacing=\'0\' width=\'93%\' > \n <thead> \n <tr>\n <th>#</th>\n <th>Campo</th>\n <th>Descripci&oacuten</th> \n </tr>\n </thead>\n <tbody> \n';
+            var footer = '</tbody> \n </table> \n </div> \n </div>';
+            var html = title;
+            var numsign = 0; 
+            var htmltemp = '';
+            var objxEsp = '';
+
+            $.each(objVarVerifique, function(idx, obj) 
+            {
+                if(idx == "error") {
+                    html = '<h4> Extensi&oacuten no soportada, verifique el archivo </h4>';     
+                    return(html);
+                }
+                if(idx == "numberOfSignatures"){
+                    numsign = obj;
+                    html += '<h4>' + fielJsonEs[idx] + ': ' + obj +' </h4>\n <br><br>';
+                }
+                if(idx == "signatures") { 
+                    signatures = obj; //se almacena la(s) cabecera(s) de las firmas
+                }
+            });
+
+            var contsing = 1; // variable que indica la firma donde esta posicionado 
+
+            //recorre las firmas signatures
+            $.each(signatures, function(idx, obj) { 
+                html += '<h4> Informaci&oacuten de la firma: '+contsing+'<h4> \n';
+                html += head;
+                var contfiels = 8; /* -variable que indica el campo de la firma 
+                                      -arranca en el campo 6 porque necesitamos que muestre de primero las 5 campos requeridos*/
+                fields = obj; // variable que almacena los campos de la firma
+                $.each(fields, function(id, objx) { 
+                    //Recorre los campos de la firma
+                    //alert('entro firma: ' + fielJsonEs[id]);
+                    if(fielJsonEs[id]=='Nombre del firmante') {
+                        //alert('entro campos de firma');
+                        html += '<tr>\n<td >'+'1'+'</td>\n<td >' + fielJsonEs[id] + '</td>\n<td>' + objx +' </td>\n</tr>\n';
+                        //contfiels++;
+                    }
+                    else if(fielJsonEs[id]=='Fecha en que se realiza la firma') {
+                        //alert('entro campos de firma');
+                        html += '<tr>\n<td>'+'2'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objx +'     </td>\n</tr>\n';
+                        //contfiels++;
+                    }
+                    else if(fielJsonEs[id]=='Chequea la integridad de la firma') {
+                        //alert('entro campos de firma');
+                        if(objx == 'true') {
+                            objxEsp = 'verdadero';
+                        }
+                        else {
+                            objxEsp='falso';
+                        }
+                        html += '<tr>\n<td>'+'3'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objxEsp +'         </td>\n</tr>\n';
+                        //contfiels++;
+                    }
+                    else if(fielJsonEs[id]=='El certificado todav&iacutea est&aacute v&aacutelido') {
+                            if(objx == 'true') { 
+                                objxEsp = 'verdadero';
+                            }
+                            else {
+                                objxEsp='falso';
+                            }
+                            html += '<tr>\n<td>'+'4'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objxEsp +'             </td>\n</tr>\n';
+                           //contfiels++;
+                    }  
+                    else if(fielJsonEs[id]=='Fecha de inicio de validez del certificado') {
+                        html += '<tr>\n<td>'+'5'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objx +'             </td>\n</tr>\n';
+                        //contfiels++;
+                    }   
+                    else if(fielJsonEs[id]=='Fecha de fin de validez del certificado') {
+                        html += '<tr>\n<td>'+'6'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objx +'             </td>\n</tr>\n';
+                        //contfiels++;
+                    } 
+                    else if(fielJsonEs[id]=='El certificado es v&aacutelido en el momento de la firma') {
+                        if(objx == 'true') { 
+                            objxEsp = 'verdadero';
+                        }
+                        else {
+                            objxEsp='falso';
+                        }
+                        html += '<tr>\n<td>'+'7'+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objxEsp +'             </td>\n</tr>\n';
+                        //contfiels++;
+                    }  
+                    else { 
+                        if(objx == 'true' ) { 
+                            htmltemp += '<tr>\n<td>'+contfiels+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td    >' + 'verdadero' +' </td>\n</tr>\n';
+                        }
+                        else if(objx == 'false')  { 
+                            htmltemp += '<tr>\n<td>'+contfiels+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td    >' + 'falso' +' </td>\n</tr>\n';
+                        }
+                        else { 
+                        htmltemp += '<tr>\n<td>'+contfiels+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objx +' </td>\n</tr>\n'; 
+                        }
+                        contfiels++;
+                    }     
+                    //html += '<tr>\n<td>'+contfiels+'</td>\n<td>' + fielJsonEs[id] + '</td>\n<td>' + objx +' </td>\n</tr>\n';
+                    //contfiels++;
+                });
+                contsing++;
+                //alert('html:' + html);
+                //alert('htmltemp: ' + htmltemp);
+                html += htmltemp;
+                htmltemp = '';
+                //alert('html fin: ' + html);
+                html += footer;
+                //if(contsing>numsign) html += footer;
+                //else html += footer + head                
+            });
+            //html += footer;
+            return(html);
+        }
+    </script>
+
+    <script>
+        function manejoExtension() {
+            if(document.SignFormat.optradio[0].checked)
+                document.getElementById("file-sign").accept=".pdf";
+            else {
+                document.getElementById("file-sign").accept=".*";
+                document.getElementById("file-sign").multiple="multiple";
+            }
+        }
+    </script>
+    <!--<script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#tabs').tab();
+        });
+    </script>-->
+</head>
+
+<body style= "overflow: auto">
+    <noscript><h1>Por favor habilite JavaScript!</h1></noscript>
+    <div id="operation">
+    <div id="barra_herramientas"></div>
+        <div id="formularioSEP" >
+        <!--Sección para verificar (formulario)-->
+           <div id="verificar">
+            <div class="well well-sm" align ="right"><h6>Informaci&oacuten: Servicio Murachi<h6></div>
+               <div align="center"><h2>Verificar firma</h2>
+                <p></p>
+                <div class="container kv-main" >
+                    <form enctype="multipart/form-data"  id="verificar"> 
+                        <input id="file-check-sign" class="file" type="file" multiple data-min-file-count="1" name="upload">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" id="resetVerificacion" class="btn btn-default">Limpiar</button>
+                        <br><br>
+                        <div id="respuestaVerificacion" ></div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+               
+    <p>
+    <div id="log" style="white-space: pre; font-family: monospace;"></div>
+    <!--Función que captura el evento del button reset del formulario verificar y limpia el div respuesta (tabla de la verificación de la firmna)-->
+</body>
+</html>                    

@@ -1,0 +1,95 @@
+<!--**********************************************************************************
+* @fecha de modificacion: 08/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<!doctype html>
+<html lang="es">
+	<head>
+            <meta charset="utf-8">
+            <title>Sistema Integrado de Gestion para Entes del Sector Publico</title>
+            <link href="base/librerias/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+            <link href="base/css/sigesp_css_inicio.css" rel="stylesheet">
+            <script type="text/javascript" src="base/librerias/js/general/json2.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/sha1.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/sigesp_lib_funciones_lsi.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript" src="vista/sss/js/sigesp_vis_sss_inicio.js"></script>
+	</head>
+	<body class="text-center">    
+		<main class="form-signin">
+			<div class="container-fluid" id="main-content">
+		        <div class="container">
+					<form>
+						<div class="row" style="">
+                                                <div class="col-sm-12 alert alert-danger" id="display_error" role="alert" style="height:30px;display: none;">
+                                                        <p id="message_error" class="control-label" style="margin-top:-10px" >...</p>
+                                                </div>
+                                                <div class="col-sm-12 alert alert-success" role="alert"  id="display_exito" style="height:30px;display:none">
+                                                        <p id="message_exito" class="control-label" style="margin-top:-10px;">...</p> 
+                                                </div>
+						</div>
+						<div class="row">
+							<h1 class="h6 mb-3 text-muted"><b>Empresa</b></h1>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<label for="cmbbasedatos" class="control-label">Base de Datos</label>
+							</div>
+							<div class="col-8">
+                                                            <select class="form-control" name="cmbbasedatos" id="cmbbasedatos" style="width:100%;" onChange="buscarEmpresas();">
+                                                                <option value="db">Espere....</option>
+							    </select>
+							</div>							
+						</div>					
+						<div class="row">
+							<div class="col-4">
+								<label for="cmbempresa" class="control-label">Empresa</label>
+							</div>
+							<div class="col-8">
+                                                            <select class="form-control" name="cmbempresa" id="cmbempresa" style="width:100%" onChange="irSession();">
+								</select>
+							</div>							
+						</div>					
+						<div class="row">
+							<h1 class="h6 mb-3 text-muted" style="margin-top:10px;"><b>Usuario</b></h1>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<label for="txtcodusuario" class="control-label">Usuario</label>
+							</div>
+							<div class="col-8">
+								<input class="form-control" id="txtcodusuario" name="txtcodusuario" placeholder="Usuario">
+							</div>							
+						</div>					
+						<div class="row">
+							<div class="col-4">
+								<label for="txtpasusuario" class="control-label">Password</label>
+							</div>
+							<div class="col-8">
+								<input type="password" class="form-control" id="txtpasusuario" name="txtpasusuario" placeholder="**********"  onKeyPress="javascript: aceptarPassword(this,event);">
+							</div>							
+						</div>					
+						<div class="row">
+							<div class="col-6">
+                                                            <button class="btn btn-primary" type="button" style="width:70px" onClick="irAceptar();" id="btnAceptar">Aceptar</button>
+							</div>
+							<div class="col-6">
+                                                            <button class="btn btn-secondary" type="button" style="width:70px" onClick="irCancelar();">Cancelar</button>
+							</div>
+						</div>
+						<div class="row">
+<!--							<p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+-->						</div>
+					</form>
+				</div>
+			</div>						
+		</main>
+	</body>
+</html>

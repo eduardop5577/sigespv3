@@ -1,0 +1,78 @@
+/***********************************************************************************
+* @Estilo para manejar los formularios del sistema
+* @fecha de modificacion: 04/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+***********************************************************************************/
+
+.calendar .x-menu-item-icon {
+    background-image:url(../../resources/images/default/shared/calendar.gif);
+}
+
+.search-item {
+    font:normal 11px tahoma, arial, helvetica, sans-serif;
+    padding:3px 10px 3px 10px;
+    border-bottom:1px solid #eeeeee;
+}
+.search-item h3 {
+    display:block;
+    font:inherit;
+    font-weight:bold;
+}
+
+.search-item h3 span {
+    float: right;
+    font-weight:normal;
+    margin:0 0 5px 5px;
+    width:100px;
+    display:block;
+    clear:none;
+}
+
+.combos
+	{
+			float:left;
+			margin-right:5px
+	}
+
+.fondo
+	{
+		background:#F9F9EE;
+	}
+	
+.imagen-sep{
+	
+ background-image: url(../../base/imagenes/sigesp_img_botmodsolicitudpresupuestaria.gif) !important;
+ 
+}
+
+.imagen-soc{
+	
+	 background-image: url(../../base/imagenes/sigesp_img_modcompras.png) !important;
+	 
+}
+
+.logo
+{
+	background-color: #cc3433; 
+}
+
+.prueba
+{
+	background-color: #cc3433; 
+}
+
+.celda-azul .x-grid3-cell-inner
+{
+      color:black;
+      background-color:#CADAEE;      
+}
+
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+  white-space: normal; /* changed from nowrap */
+}

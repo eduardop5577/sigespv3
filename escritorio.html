@@ -1,0 +1,53 @@
+<!--**********************************************************************************
+* @fecha de modificacion: 08/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<!doctype html>
+<html lang="es">
+	<head>
+            <meta charset="utf-8">
+            <title>Sistema Integrado de Gestion para Entes del Sector Publico</title>
+            <link href="base/librerias/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+            <link href="base/css/sigesp_css_escritorio.css" rel="stylesheet">
+            <script type="text/javascript" src="base/librerias/js/general/json2.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/sha1.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/sigesp_lib_funciones_lsi.js"></script>
+            <script type="text/javascript" src="base/librerias/js/general/jquery-3.6.0.min.js"></script>
+	    <script src="base/librerias/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="vista/sss/js/sigesp_vis_sss_escritorio.js"></script>
+	</head>
+	<body class="body"> 
+		<div class="container">
+			<div class="row">
+				<div id='logo' style='position: relative; top:0px;'  align='center'>
+					<img src='base/imagenes/sigesp_img_encabezado.jpg' width='100%' height='45px'  align='baseline'/>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-sm-12 alert alert-danger" id="display_error" role="alert" style="height:30px;display: none;">
+						<p id="message_error" class="control-label" style="margin-top:-10px" >...</p>
+				</div>
+				<div class="col-sm-12 alert alert-success" role="alert"  id="display_exito" style="height:30px;display:none">
+						<p id="message_exito" class="control-label" style="margin-top:-10px;">...</p> 
+				</div>
+			</div>
+			<div class="row" id="Contenido"></div>
+			<div class="row" id="Detalle" style="margin-top:30px">
+				<div class="tab-content">
+				  <div class="tab-pane" id="Principales" role="tabpanel" aria-labelledby="Principales-tab">Principales</div>
+				  <div class="tab-pane" id="Administrativos" role="tabpanel" aria-labelledby="Administrativos-tab">Administrativos</div>
+				  <div class="tab-pane" id="Auxiliares" role="tabpanel" aria-labelledby="Auxiliares-tab">Auxiliares</div>
+				  <div class="tab-pane" id="Personal" role="tabpanel" aria-labelledby="Personal-tab">Personal</div>
+				  <div class="tab-pane" id="Herramientas" role="tabpanel" aria-labelledby="Herramientas-tab">HerramientasSistema</div>  
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>	

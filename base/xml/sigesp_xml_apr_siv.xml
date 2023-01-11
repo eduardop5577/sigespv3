@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--**********************************************************************************
+* @fecha de modificacion: 12/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<tablas>
+  <tabla>
+      <nombre>siv_causas</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>12</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_config</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>11</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_almacen</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>10</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_tipoarticulo</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>9</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_unidadmedida</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>8</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_segmento</nombre>
+      <criterio>WHERE codseg DISTINTO -::- </criterio>
+      <tipo>INSERT</tipo>
+	  <id>7</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_familia</nombre>
+      <criterio>WHERE codseg DISTINTO -::- AND codfami DISTINTO -::::- </criterio>
+      <tipo>INSERT</tipo>
+	  <id>6</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_clase</nombre>
+      <criterio>WHERE codseg DISTINTO -::- AND codfami DISTINTO -::::- AND codclase DISTINTO -:::::- </criterio>
+      <tipo>INSERT</tipo>
+	  <id>5</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_producto</nombre>
+      <criterio>WHERE codseg DISTINTO -::- AND codfami DISTINTO -::::- AND codclase DISTINTO -:::::- AND codprod DISTINTO -:::::::- </criterio>
+      <tipo>INSERT</tipo>
+	  <id>4</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_articulo</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>3</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_dt_articulo</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>2</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_componente</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>1</id>
+  </tabla>
+  <tabla>
+      <nombre>siv_cargosarticulo</nombre>
+      <criterio>WHERE codart IN (SELECT codart FROM siv_articulo)</criterio>
+      <tipo>INSERT</tipo>
+	  <id>0</id>
+  </tabla>
+</tablas>

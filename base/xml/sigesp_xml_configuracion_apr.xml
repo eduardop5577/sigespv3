@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--**********************************************************************************
+* @fecha de modificacion: 12/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<conexiones>
+<conexion>
+	<servidor>localhost</servidor>
+	<puerto>5432</puerto>
+	<basedatos>db_inac_2022</basedatos>
+	<nombre>INAC 2022</nombre>
+	<login>postgres</login>
+	<password>14160533</password>
+	<gestor>POSTGRES</gestor>
+ </conexion>
+ <conexion>
+	<servidor>localhost</servidor>
+	<puerto>5432</puerto>
+	<basedatos>db_demo_2022</basedatos>
+	<nombre>SIGESP 2022</nombre>
+	<login>postgres</login>
+	<password>adminsigesp</password>
+	<gestor>POSTGRES</gestor>
+        <logo>imagen.gif</logo>
+        <ancho>90</ancho>
+        <alto>50</alto>
+        <directorio>/sigespv3</directorio>
+        <tomcatservidor>/sigespv3</tomcatservidor>
+        <tomcatpuerto>/sigespv3</tomcatpuerto>
+        </conexion>
+</conexiones>

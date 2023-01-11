@@ -1,0 +1,93 @@
+/***********************************************************************************
+* @Estilo para manejar la cabecera de los módulos
+* @fecha de modificacion: 04/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+***********************************************************************************/
+
+#container {
+    width:900px;
+    height:400px;
+    border:3px solid #c3daf9;
+}
+.bencabezado {
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: left top;
+	height: 40px;
+	width: auto;
+	background-color: #E4E4E4;
+}
+.bsistema {
+	height: 15px;
+	width: auto;
+	background-color: #E4E4E4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #003366;
+	background-position: center center;
+	line-height: normal;
+	text-align: left;
+	vertical-align: middle;
+}
+.bhora {
+	height: 10px;
+	width: auto;
+	background-color: #E4E4E4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #003366;
+	background-position: center center;
+	line-height: normal;
+	text-align: right;
+	vertical-align: middle;
+}
+.binactivo {
+	height: 10px;
+	width: auto;
+	background-color: #E4E4E4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #003366;
+	background-position: center center;
+	line-height: normal;
+	text-align: right;
+	vertical-align: middle;
+}
+.busuario {
+	height: 10px;
+	width: auto;
+	background-color: #E4E4E4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #666666;
+	background-position: center center;
+	line-height: normal;
+	text-align: right;
+	vertical-align: middle;
+}
+.cd-menu {
+	background-color: #F7F7F7;
+	height:33px;
+	width: 780px; 
+}
+.cd-logo {
+	background-color: #cc3433;	
+}

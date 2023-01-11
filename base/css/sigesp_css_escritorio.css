@@ -1,0 +1,93 @@
+/***********************************************************************************
+* @Estilo para manejar el escritorio del sistema
+* @fecha de modificacion: 04/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+***********************************************************************************/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+	font-family: verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+        }
+        .empty .x-panel-body {
+            padding-top:20px;
+            text-align:center;
+            font-style:italic;
+            color: gray;
+            font-size:11px;
+        }
+		
+		
+.modprincipal 
+{
+	background-image: url( ../../base/imagenes/sigesp_img_modprincipales.png ) !important;
+}
+.modherramienta 
+{
+	background-image: url( ../../base/imagenes/sigesp_img_modherramientas.png ) !important;
+}
+.modpersonal 
+{
+	background-image: url( ../../base/imagenes/sigesp_img_modpersonal.png ) !important;
+}
+.modauxiliar 
+{
+	background-image: url( ../../base/imagenes/sigesp_img_modauxiliares.png ) !important;
+}
+.modadministrativo
+{
+	background-image: url( ../../base/imagenes/sigesp_img_modadministrativo.png) !important;
+}
+.modfondo
+{
+	background-image: url( ../../base/imagenes/sigesp_img_fondopantalla.jpg) !important;
+}
+.modfondoprincipal
+{
+	background-image: url( ../../base/imagenes/sigesp_img_fondopantallaprincipal.jpg) !important;
+}
+
+.nav {
+   float:left;
+   width:100%;
+   line-height:normal;
+   font-size: 14px;
+   font-weight: bold;
+}
+.nav ul {
+   margin:0;
+   padding:0;
+   list-style:none;
+}
+.nav li {
+   float:left;
+   margin:0 0 0 3px;
+   padding:0;
+   background:  #CCCCCC ;
+}
+.nav a {
+   display:block;
+   padding:3px 10px 3px 10px;
+   color: #fff;
+   text-decoration: none;
+}
+.nav .activa a{
+   background:  #CCCCCC ;
+}
+.nav .activa{
+    background: #CCCCCC ;
+}
+

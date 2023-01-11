@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--**********************************************************************************
+* @fecha de modificacion: 12/08/2022, para la version de php 8.1 
+* @autor: Ing. Yesenia Moreno 0412-5191342 / 0424-5575862 lang.solucionesintegrales@gmail.com
+* @autor: Ing. Luis Anibal Lang 0412-2880716 lang.solucionesintegrales@gmail.com
+* @autor: SIGESP C.A. 58 251 254.06.68 / 254.38.76 
+* ********************************************
+* @fecha modificacion  
+* @autor 
+* @descripcion  
+**********************************************************************************-->
+
+<tablas>
+  <tabla>
+      <nombre>soc_clausulas</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>5</id>
+  </tabla>
+  <tabla>
+      <nombre>soc_modalidadclausulas</nombre>
+      <criterio>WHERE codtipmod DISTINTO -::- </criterio>
+      <tipo>INSERT</tipo>
+	  <id>4</id>
+  </tabla>
+  <tabla>
+      <nombre>soc_dtm_clausulas</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>3</id>
+  </tabla>
+  <tabla>
+      <nombre>soc_tiposervicio</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>2</id>
+  </tabla>
+  <tabla>
+      <nombre>soc_servicios</nombre>
+      <criterio></criterio>
+      <tipo>INSERT</tipo>
+	  <id>1</id>
+  </tabla>
+  <tabla>
+      <nombre>soc_serviciocargo</nombre>
+      <criterio>WHERE codser IN (SELECT codser FROM soc_servicios)</criterio>
+      <tipo>INSERT</tipo>
+	  <id>0</id>
+  </tabla>
+</tablas>
